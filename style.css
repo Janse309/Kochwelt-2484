@@ -8,16 +8,42 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Raleway", sans-serif;
-    
+    font-family: "Raleway", sans-serif;  
 }
 
-section{
+main{
     display: flex;
+    flex-direction: column;
 }
 
 .hero-section{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.hero-section-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my-first-div{
+    display: flex;
+    gap: 20px;
+}
+
+.my-second-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-croissant{
+    height: 200px;
+    width: 300px;
 }
 
 button{
@@ -26,11 +52,27 @@ button{
     border-radius: 8px;
     border: 0;
     cursor: pointer;
+    padding: 8px 32px;
+}
+
+.news-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 48px 40px;
+    
+}
+
+.croissant-image-section{
+    display: flex;
+    gap: 100px;
 }
 
 .croissant{
-    height: 250px;
+    height: 200px;
     width: 250px;
+    gap: 40px;
 }
 
 img{
@@ -47,6 +89,10 @@ h1{
 
 h2{
     font-size: 40px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding-bottom: 8px;
 }
 
 h3{
@@ -66,4 +112,10 @@ a:hover{
 .news-section{
     background-color: #efefef;
     width: 100vw;
+}
+
+.article-section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
