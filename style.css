@@ -1,61 +1,69 @@
-html {
+
+body{
+    font-size: 16px;
+    max-width: 1920px;
     margin: 0;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+section{
+    display: flex;
+}
+
+.hero-section{
+    display: block;
+}
+
+button{
+    color: white;
+    background-color: #008000;
+    border-radius: 8px;
+    border: 0;
     cursor: pointer;
 }
 
-body{
-    background-color: black;
-    height: 100vh;
+.croissant{
+    height: 250px;
+    width: 250px;
 }
 
-.pic{
-    position: absolute;
-    top: 10px;
-    filter: invert(1);  
+img{
+    border-radius: 8px;
 }
-/* Design-Notes:
-    Font-Family: Raleway
-    Header: #FFFFFF;
-    Navigation: #41893C;
-    Buttons: #008000
-    
 
-    === Hauptseite: ===
+footer{
+    background-color: #232323;
+}
 
-    Main:
-    Französische Croissants Section:
-    background-color: #FFFFFF;
-    button: #008000;
+h1{
+    font-size: 60px;
+}
 
-    Lust auf was neues Section: 
-    background-color: #EFEFEF;
+h2{
+    font-size: 40px;
+}
 
-    Pfanne vs. Wok section:
-    background-color: #FFFFFF;
+h3{
+    font-size: 30px;
+}
 
-    Footer: 
-    background-color: #403B3B; 
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
 
-    === Rezeptsseite: ===
-    
-    background-color: #FFFFFF; (Komplett)
+a:hover{
+    color: #008000;
+}
 
-    Table:
-    1 Spalte:
-    background-color: #EFEFEF;
-    2 Spalte: 
-    background-color: #FFFFFF;
-
-    Footer:
-    background-color: #403B3B;
-    
-    === Kontaktseite ===
-
-    Kontakformular: 
-    background-color: #DCDCDC;
-
-    Footer: 
-    background-color: #232323; 
-    
-    
-*/
+.news-section{
+    background-color: #efefef;
+    width: 100vw;
+}
