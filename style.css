@@ -1,4 +1,61 @@
-html{
+html {
     margin: 0;
     cursor: pointer;
 }
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.pic{
+    position: absolute;
+    top: 10px;
+    filter: invert(1);  
+}
+/* Design-Notes:
+    Font-Family: Raleway
+    Header: #FFFFFF;
+    Navigation: #41893C;
+    Buttons: #008000
+    
+
+    === Hauptseite: ===
+
+    Main:
+    Französische Croissants Section:
+    background-color: #FFFFFF;
+    button: #008000;
+
+    Lust auf was neues Section: 
+    background-color: #EFEFEF;
+
+    Pfanne vs. Wok section:
+    background-color: #FFFFFF;
+
+    Footer: 
+    background-color: #403B3B; 
+
+    === Rezeptsseite: ===
+    
+    background-color: #FFFFFF; (Komplett)
+
+    Table:
+    1 Spalte:
+    background-color: #EFEFEF;
+    2 Spalte: 
+    background-color: #FFFFFF;
+
+    Footer:
+    background-color: #403B3B;
+    
+    === Kontaktseite ===
+
+    Kontakformular: 
+    background-color: #DCDCDC;
+
+    Footer: 
+    background-color: #232323; 
+    
+    
+*/
