@@ -16,13 +16,21 @@ section{
     display: flex;
 }
 
+.hero-section{
+    display: block;
+}
+
 button{
     color: white;
     background-color: #008000;
-    padding: 8px 32px;
     border-radius: 8px;
     border: 0;
     cursor: pointer;
+}
+
+.croissant{
+    height: 250px;
+    width: 250px;
 }
 
 img{
