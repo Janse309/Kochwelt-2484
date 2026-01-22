@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
 }
 
 .full-width {
@@ -25,51 +24,12 @@ main {
 }
 
 section {
-=======
-    justify-content: center;
-    align-items: center;
-    font-family: "Raleway", sans-serif;  
-}
-
-main{
->>>>>>> Jan_Main
     display: flex;
     flex-direction: column;
 }
 
-<<<<<<< HEAD
 .hero-section {
     display: block;
-=======
-.hero-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-}
-
-.hero-section-article{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.my-first-div{
-    display: flex;
-    gap: 20px;
-}
-
-.my-second-div{
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-section-croissant{
-    height: 200px;
-    width: 300px;
->>>>>>> Jan_Main
 }
 
 button {
@@ -79,31 +39,10 @@ button {
     border: 0;
     cursor: pointer;
     padding: 8px 32px;
-<<<<<<< HEAD
 }
 
 .croissant {
     height: 250px;
-=======
-}
-
-.news-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 40px 48px 40px;
-    
-}
-
-.croissant-image-section{
-    display: flex;
-    gap: 100px;
-}
-
-.croissant{
-    height: 200px;
->>>>>>> Jan_Main
     width: 250px;
     gap: 40px;
 }
@@ -141,7 +80,6 @@ a:hover {
 .news-section {
     width: 100%;
     background-color: #efefef;
-<<<<<<< HEAD
     display: block;
     padding: 60px 0;
 }
@@ -185,14 +123,3 @@ footer {
     }
 
 }
-=======
-    width: 100vw;
-}
-
-.article-section{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
->>>>>>> Jan_Main
