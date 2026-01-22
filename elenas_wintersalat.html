@@ -9,17 +9,164 @@
     <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css">
 
     <style>
+        .hero-img-recipepage {
+            height: 300px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
 
+        .generally-recipe-information-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .generally-recipe-information-item {
+            display: flex;
+            align-items: center;
+            background-color: #efefef;
+            padding: 4px 8px;
+            border-radius: 8px;
+            gap: 16px;
+        }
+
+        .icon {
+            height: 14px;
+            border-radius: 0;
+        }
+
+        .ingredients-calculation-container {
+            border-top: 1px solid #efefef;
+            padding: 8px 0;
+        }
+
+        input {
+            border: 1px solid #efefef;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #efefef;
+        }
+
+        td {
+            border-radius: 8px;
+            padding: 16px 24px;
+        }
+
+        .recipe-responsible {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-picture {
+            width: 70px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 24px;
+        }
     </style>
 </head>
+
 <body>
     <header>
 
     </header>
 
-    <main>
+    <main class="margin-left-right">
         <section>
-            <h1>Elena Wintersalat</h1>
+            <h1>Elenas Wintersalat</h1>
+            <img class="hero-img-recipepage" src="./img/elena_wintersalat.png" alt="Bild eines Salates">
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    45 Min.
+                </div>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/brain-solid.svg" alt="Gehirn-Icon">
+                    simpel
+                </div>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
+                    22.01.2026
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Zutaten</h2>
+
+            <div class="ingredients-calculation-container">
+                Zutaten für
+                <input type="number">
+                <button>Portionen</button>
+            </div>
+            <table>
+                <tr>
+                    <td>Chinakohl</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                </tr>
+                <tr>
+                    <td>Birne</td>
+                </tr>
+                <tr>
+                    <td>Apfel</td>
+                </tr>
+                <tr>
+                    <td>Nüsse (z.B. Walnüsse)</td>
+                </tr>
+                <tr>
+                    <td>Zitrone</td>
+                </tr>
+                <tr>
+                    <td>Orangensaft</td>
+                </tr>
+                <tr>
+                    <td>Joghurt</td>
+                </tr>
+                <tr>
+                    <td>Salz und Pfeffer</td>
+                </tr>
+                <tr>
+                    <td>Currypulver</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Zubereitung</h2>
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    ca. 15 Minuten
+                </div>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    Gesamtzeit ca. 45 Minuten
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus adipisci voluptatum. Eaque a omnis incidunt accusamus voluptate ex, doloremque beatae voluptas placeat sed ut ratione expedita, veniam quo tempore!</p>
+        </section>
+
+        <section>
+            <h3>Rezept erstellt von</h3>
+            <div class="recipe-responsible">
+                <img class="profile-picture" src="./img/elena_avatar.png" alt="">
+                <span class="name">Elena</span>
+            </div>
         </section>
     </main>
 

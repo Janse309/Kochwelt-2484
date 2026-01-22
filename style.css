@@ -19,6 +19,11 @@ body {
     width: 100%;
 }
 
+.margin-left-right {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
 main {
     flex: 1;
 }
@@ -32,8 +37,6 @@ section {
     display: block;
 }
 
-
-
 button {
     color: white;
     background-color: #008000;
@@ -43,7 +46,7 @@ button {
     padding: 8px 32px;
 }
 
-.potato-image{
+.dish-image{
     height: 200px;
     width: 250px;
 }
@@ -53,11 +56,11 @@ img {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-block-start: 0;
     margin-block-end: 0;
     margin: 0;
@@ -65,7 +68,7 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 16px;
 }
 
 a {
@@ -78,14 +81,14 @@ a:hover {
     color: #008000;
 }
 
-.news-section {
+.recipes-section {
     width: 100%;
     background-color: #efefef;
     display: block;
     padding: 60px 0;
 }
 
-.news-section .wrapper {
+.recipes-section .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
