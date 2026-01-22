@@ -32,6 +32,8 @@ section {
     display: block;
 }
 
+
+
 button {
     color: white;
     background-color: #008000;
@@ -41,10 +43,9 @@ button {
     padding: 8px 32px;
 }
 
-.croissant {
-    height: 250px;
+.potato-image{
+    height: 200px;
     width: 250px;
-    gap: 40px;
 }
 
 img {
