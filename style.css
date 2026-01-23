@@ -24,8 +24,6 @@ section {
     flex-direction: column;
 }
 
-
-
 button {
     color: white;
     background-color: #008000;
@@ -62,12 +60,13 @@ p {
 
 a {
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     color: black;
 }
 
 a:hover {
     color: #008000;
+    font-weight: bold;
 }
 
 /* nav */
@@ -93,7 +92,7 @@ a:hover {
 
 .nav_items {
     display: flex;
-    gap: 12px;
+    gap: 24px;
     font-family: "Raleway", sans-serif;
 }
 
@@ -150,8 +149,9 @@ a:hover {
 .recipes-section {
     width: 100%;
     background-color: #efefef;
-    display: block;
-    padding: 30px 0;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
 
 .wrapper-headline{
@@ -163,6 +163,23 @@ a:hover {
     gap: 40px;
 }
 
+.dish-image {
+    height: 200px;
+    width: 250px;
+}
+
+.news-section{
+    margin-top: 40px;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.news-section-div{
+    display: flex;
+    justify-content: center;
+}
+
 .recipes-section .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -172,11 +189,6 @@ a:hover {
 
 .hero-section {
     display: block;
-}
-
-.dish-image {
-    height: 200px;
-    width: 250px;
 }
 
 footer {
