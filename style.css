@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* nav */
 .container{
     display: flex;
     align-items: center;
@@ -70,6 +70,11 @@ main {
     flex: 1;
 }
 
+.main-heading{
+    display: flex;
+    justify-content: center;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -77,6 +82,21 @@ section {
 
 .hero-section {
     display: block;
+}
+
+.dish-of-the-day{
+    display: flex;
+    gap: 50px;
+}
+
+.dish-of-the-day-image{
+    width: 300px;
+}
+
+.dish-of-the-day-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 button {
@@ -87,6 +107,8 @@ button {
     cursor: pointer;
     padding: 8px 32px;
 }
+
+
 
 .dish-image{
     height: 200px;
