@@ -9,92 +9,165 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="alexanderRezept.css">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
+        .hero-img-recipepage {
+            height: 300px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        .generally-recipe-information-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .generally-recipe-information-item {
+            display: flex;
+            align-items: center;
+            background-color: #efefef;
+            padding: 4px 8px;
+            border-radius: 8px;
+            gap: 16px;
+        }
+
+        .icon {
+            height: 14px;
+            border-radius: 0;
+        }
+
+        .ingredients-calculation-container {
+            border-top: 1px solid #efefef;
+            padding: 8px 0;
+        }
+
+        input {
+            border: 1px solid #efefef;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #efefef;
+        }
+
+        td {
+            border-radius: 8px;
+            padding: 16px 24px;
+        }
+
+        .recipe-responsible {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-picture {
+            width: 70px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 24px;
+        }
+    </style>
     </head>
     <body>
-        <div class="shadow">
-            <h1 class="h1_tag">Kochwelt</h1>
-            <div class="nav_items">
-                <nav>
-                    <a class="nav1" href="">Start</a>
-                    <a class="nav1" href="">Rezept des Tages</a>
-                    <a class="nav1" href="">Kontakt</a>
-                    <a class="nav1" href="">Impressum</a>
-                </nav>
-            </div>
-        </div>
-        <div class="center-class">
-            <h2 class="title_font">Überbackene Conchiglioni mit Gorgonzola</h2>
-            <img class="picture" src="/img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg" alt="Gemüse">
-                <div class="timer_min_container">
-                    <p class="min_container">20 min</p>
-                <div>
-                    <p class="simpel_container">simpel</p>
+        <main class="margin-left-right">
+        <section>
+            <h1>alexanderRezept</h1>
+            <img class="hero-img-recipepage" src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg" alt="conchiglioni-ripieni-gorgonzola-e-funghi">
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    45 Min.
                 </div>
-                <div>
-                    <p class="x_container">22.01.2026</p>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/brain-solid.svg" alt="Gehirn-Icon">
+                    simpel
+                </div>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
+                    22.01.2026
                 </div>
             </div>
-            <div class="container">
-                <p class="p_zutaten">Zutaten für:</p>
-                <input class="number_container" type="number">
-                <button class="button_container">Portionen</button>
+        </section>
+
+        <section>
+            <h2>Zutaten</h2>
+
+            <div class="ingredients-calculation-container">
+                Zutaten für
+                <input type="number">
+                <button>Portionen</button>
             </div>
-        </div>
-        <div class="conchiglioni">
-            <p>500 g Conchiglioni</p>
-        </div>
-        <div class="knoblauchzehe">
-            <p> 1 rote Knoblauchzehe</p>
-        </div>
-        <div class="conchiglioni">
-            <p>40 g Butter + Butter f. d. Form</p>
-        </div>
-        <div class="knoblauchzehe">
-            <p>40 g Weizenmehl universal </p>
-        </div>
-        <div class="conchiglioni">
-            <p>500 ml Milch</p>
-        </div>
-        <div class="knoblauchzehe">
-            <p>1 Prise Muskat</p>
-        </div>
-        <div class="conchiglioni">
-            <p>150 g Gorgonzola</p>
-        </div>
-        <div class="knoblauchzehe">
-            <p>1 Dose Champingnons geschnitten</p>
-        </div>
-        <div class="conchiglioni">
-            <p>Parmesan</p>
-        </div>
-        <div class="knoblauchzehe">
-            <p>Salz</p>
-        </div>
-        <div class="conchiglioni">
-            <p>Pfeffer</p>
-        </div>
-        <div class="zubereitungs_container">
+            <table>
+                <tr>
+                    <td>500 g Conchiglioni</td>
+                </tr>
+                <tr>
+                    <td>1 rote Knoblauchzehe</td>
+                </tr>
+                <tr>
+                    <td>40 g Butter + Butter f. d. Form </td>
+                </tr>
+                <tr>
+                    <td>40g Weizenmehl universal</td>
+                </tr>
+                <tr>
+                    <td>500 ml Milch</td>
+                </tr>
+                <tr>
+                    <td>1 Prise Muskat</td>
+                </tr>
+                <tr>
+                    <td>150 g Gorganzola</td>
+                </tr>
+                <tr>
+                    <td>40 g ( Parmesan, Salz, Pfeffer)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
             <h2>Zubereitung</h2>
-        </div>
-        <div class="p_container">
-            <p class="min_container">ca. 20 Minuten</p>
-            <p class="min_container">Gesamtzeit ca. 50 Minuten</p>
-        </div>
-        <div class="text_container">
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    ca. 20 Minuten
+                </div>
+                <div class="generally-recipe-information-item" >
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    Gesamtzeit ca. 50 Minuten
+                </div>
+            </div>
             <p>Die Conchiglioni in Salzwasser al dente kochen und abseihen. Den Knoblauch schälen und fein hacken. Die Butter in einem Topf schmelzen und den Knoblauch darin anschwitzen. Dann das Mehl dazurühren, bis es eine hellbraune Farbe hat. Langsam die Milch dazugießen. Weiterrühren bis eine glatte Sauce entsteht. Mit Salz, Pfeffer und Muskat nach Belieben würzen.
-                Inzwischen den Backofen auf 180° C Ober-/Unterhitze vorheizen. Eine Auflaufform einfetten und mit den Conchiglioni befüllen. Den in Stücke geschnittenen Gorgonzola, die geschnittenen Champignons und die Bechamelsacue vermischen und über die Conchiglioni verteilen. Den geriebenen Parmesan darüberstreuen und ca. 25 - 30 Min. goldbraun überbacken. </p>
+                Inzwischen den Backofen auf 180° C Ober-/Unterhitze vorheizen. Eine Auflaufform einfetten und mit den Conchiglioni befüllen. Den in Stücke geschnittenen Gorgonzola, die geschnittenen Champignons und die Bechamelsacue vermischen und über die Conchiglioni verteilen. Den geriebenen Parmesan darüberstreuen und ca. 25 - 30 Min. goldbraun überbacken.</p>
+        </section>
+
+        <section>
+            <h3>Rezept erstellt von</h3>
+            <div class="recipe-responsible">
+                <span class="name">Alexander</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="full-width">
+
+        <a href="index.html"><img src="./img/logo_kochwelt_ weiss.png" class="logo-footer" alt="Kochweltlogo"></a>
+
+        <div aria-label="Social Media Links">
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./img/facebook.png" class="footer-socialmedia" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta.png" class="footer-socialmedia" alt="instagram"></a>
+            <a href="https://x.com/?lang=de" target="_blank"><img src="./img/twitter.png" class="footer-socialmedia" alt="twitter"></a>
         </div>
-        <div class="rezept_container">
-            <h2>Rezept erstellt von</h2>
-        </div>
-        <div class="alexander_container_profilepicture">
-            <p class="alexander_container">Alexander</p>
-        </div>
+    </footer>>
         <script src="" async defer></script>
     </body>
 </html>
