@@ -55,6 +55,8 @@ a:hover{
     padding-top: 25px;
 }
 
+/* hier break */
+
 .full-width {
     width: 100%;
 }
@@ -90,6 +92,8 @@ button {
     height: 200px;
     width: 250px;
 }
+
+
 
 img {
     border-radius: 8px;
