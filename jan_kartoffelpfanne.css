@@ -1,8 +1,8 @@
-.headline-picture{
-    height: 250px;
-    width: 80%;
+.headline-picture {
+    height: 300px;
+    object-fit: cover;
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd) {
     background-color: #EFEFEF;
 }
