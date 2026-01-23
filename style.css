@@ -15,6 +15,48 @@ body {
     flex-direction: column;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px;
+    align-items: end;
+}
+
+.nav_item{
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+
+}
+
+.picture2{
+    width: 100px;
+    height: 100px;
+}
+
+.nav_items{
+  display: flex;
+  gap: 12px;
+  font-family: "Raleway", sans-serif;
+}
+
+a:hover{
+    color: green;
+    text-decoration-color: green;
+}
+
+.picture{
+    width: 160px;
+    height: 50px;
+}
+
+.padding_top_container{
+    padding-top: 25px;
+}
+
+/* hier break */
+
 .full-width {
     width: 100%;
 }
@@ -50,6 +92,8 @@ button {
     height: 200px;
     width: 250px;
 }
+
+
 
 img {
     border-radius: 8px;
