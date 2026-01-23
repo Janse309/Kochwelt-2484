@@ -15,57 +15,6 @@ body {
     flex-direction: column;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0px 1px;
-    align-items: end;
-}
-
-.nav_item{
-    color: black;
-    text-decoration: none;
-    font-size: 8px;
-
-}
-
-.picture2{
-    width: 100px;
-    height: 100px;
-}
-
-.nav_items{
-  display: flex;
-  gap: 12px;
-  font-family: "Raleway", sans-serif;
-}
-
-a:hover{
-    color: green;
-    text-decoration-color: green;
-}
-
-.picture{
-    width: 160px;
-    height: 50px;
-}
-
-.padding_top_container{
-    padding-top: 25px;
-}
-
-/* hier break */
-
-.full-width {
-    width: 100%;
-}
-
-.margin-left-right {
-    margin-left: 160px;
-    margin-right: 160px;
-}
-
 main {
     flex: 1;
 }
@@ -75,9 +24,7 @@ section {
     flex-direction: column;
 }
 
-.hero-section {
-    display: block;
-}
+
 
 button {
     color: white;
@@ -87,13 +34,6 @@ button {
     cursor: pointer;
     padding: 8px 32px;
 }
-
-.dish-image{
-    height: 200px;
-    width: 250px;
-}
-
-
 
 img {
     border-radius: 8px;
@@ -115,6 +55,11 @@ h3 {
     font-size: 16px;
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 a {
     text-decoration: none;
     font-weight: 400;
@@ -125,11 +70,97 @@ a:hover {
     color: #008000;
 }
 
+/* nav */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px;
+    align-items: end;
+}
+
+.nav_item {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+
+}
+
+.picture2 {
+    width: 100px;
+    height: 100px;
+}
+
+.nav_items {
+    display: flex;
+    gap: 12px;
+    font-family: "Raleway", sans-serif;
+}
+
+a:hover {
+    color: green;
+    text-decoration-color: green;
+}
+
+.picture {
+    width: 160px;
+    height: 50px;
+}
+
+.padding_top_container {
+    padding-top: 25px;
+}
+
+/* hier break */
+
+.full-width {
+    width: 100%;
+}
+
+.margin-left-right {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.dish-of-the-day {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+.dish-of-the-day-image {
+    width: 300px;
+}
+
+.dish-of-the-day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dotd-btn{
+    margin-bottom: 30px;
+}
+
 .recipes-section {
     width: 100%;
     background-color: #efefef;
     display: block;
-    padding: 60px 0;
+    padding: 30px 0;
+}
+
+.wrapper-headline{
+    padding-bottom: 30px;
+}
+
+.dish-image-section{
+    display: flex;
+    gap: 40px;
 }
 
 .recipes-section .wrapper {
@@ -137,6 +168,15 @@ a:hover {
     margin: 0 auto;
     padding: 0 16px;
     text-align: center;
+}
+
+.hero-section {
+    display: block;
+}
+
+.dish-image {
+    height: 200px;
+    width: 250px;
 }
 
 footer {
