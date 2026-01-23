@@ -9,20 +9,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="alexanderRezept.css">
         <style>
-        .hero-img-recipepage {
+        .ripieni {
             height: 300px;
             aspect-ratio: 1 / 1;
             object-fit: cover;
         }
 
-        .generally-recipe-information-container {
+        .clock-regulary {
             margin-top: 20px;
             margin-bottom: 20px;
             display: flex;
             gap: 20px;
         }
 
-        .generally-recipe-information-item {
+        .clock-regular {
             display: flex;
             align-items: center;
             background-color: #efefef;
@@ -31,12 +31,13 @@
             gap: 16px;
         }
 
-        .icon {
+        .clock {
             height: 14px;
             border-radius: 0;
+            
         }
 
-        .ingredients-calculation-container {
+        .container_calculation {
             border-top: 1px solid #efefef;
             padding: 8px 0;
         }
@@ -60,7 +61,7 @@
             padding: 16px 24px;
         }
 
-        .recipe-responsible {
+        .alex {
             display: flex;
             align-items: center;
             gap: 30px;
@@ -75,24 +76,28 @@
         .name {
             font-size: 24px;
         }
+
+        .Port{
+            background-color: green;
+        }
     </style>
     </head>
     <body>
         <main class="margin-left-right">
         <section>
             <h1>alexanderRezept</h1>
-            <img class="hero-img-recipepage" src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg" alt="conchiglioni-ripieni-gorgonzola-e-funghi">
-            <div class="generally-recipe-information-container">
-                <div class="generally-recipe-information-item" >
-                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+            <img class="ripieni" src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg" alt="conchiglioni-ripieni-gorgonzola-e-funghi">
+            <div class="clock-regulary">
+                <div class="clock-regular" >
+                    <img class="clock" src="./img/clock-regular.svg" alt="Uhr-Icon">
                     45 Min.
                 </div>
-                <div class="generally-recipe-information-item" >
-                    <img class="icon" src="./img/brain-solid.svg" alt="Gehirn-Icon">
+                <div class="clock-regular" >
+                    <img class="clock" src="./img/brain-solid.svg" alt="Gehirn-Icon">
                     simpel
                 </div>
-                <div class="generally-recipe-information-item" >
-                    <img class="icon" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
+                <div class="clock-regular" >
+                    <img class="clock" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
                     22.01.2026
                 </div>
             </div>
@@ -101,10 +106,10 @@
         <section>
             <h2>Zutaten</h2>
 
-            <div class="ingredients-calculation-container">
+            <div class="container_calculation">
                 Zutaten für
                 <input type="number">
-                <button>Portionen</button>
+                <button class="Port">Portionen</button>
             </div>
             <table>
                 <tr>
@@ -136,13 +141,13 @@
 
         <section>
             <h2>Zubereitung</h2>
-            <div class="generally-recipe-information-container">
-                <div class="generally-recipe-information-item" >
-                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+            <div class="clock-regulary">
+                <div class="clock-regular" >
+                    <img class="clock" src="./img/clock-regular.svg" alt="Uhr-Icon">
                     ca. 20 Minuten
                 </div>
-                <div class="generally-recipe-information-item" >
-                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                <div class="clock-regular" >
+                    <img class="clock" src="./img/clock-regular.svg" alt="Uhr-Icon">
                     Gesamtzeit ca. 50 Minuten
                 </div>
             </div>
@@ -152,17 +157,17 @@
 
         <section>
             <h3>Rezept erstellt von</h3>
-            <div class="recipe-responsible">
+            <div class="alex">
                 <span class="name">Alexander</span>
             </div>
         </section>
     </main>
 
-    <footer class="full-width">
+    <footer class="full">
 
         <a href="index.html"><img src="./img/logo_kochwelt_ weiss.png" class="logo-footer" alt="Kochweltlogo"></a>
 
-        <div aria-label="Social Media Links">
+        <div aria-label="Social Media">
             <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./img/facebook.png" class="footer-socialmedia" alt="facebook"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta.png" class="footer-socialmedia" alt="instagram"></a>
             <a href="https://x.com/?lang=de" target="_blank"><img src="./img/twitter.png" class="footer-socialmedia" alt="twitter"></a>
