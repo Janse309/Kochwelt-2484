@@ -170,3 +170,25 @@ a:hover{
     padding-left: 40px;
     font-family: "Raleway", sans-serif;
 }
+
+
+.main_wrapper{
+    display: block;
+    justify-content: center;
+}
+
+.main_container{
+    width: 75%;
+    justify-content: start;
+}
+
+.main_picture{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.black_footer_box{
+    background-color: black;
+}
+    
