@@ -92,7 +92,7 @@ a:hover {
 
 .nav_items {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     font-family: "Raleway", sans-serif;
 }
 
