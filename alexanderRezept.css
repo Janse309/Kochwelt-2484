@@ -173,7 +173,7 @@ a:hover{
 
 
 .main_wrapper{
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -186,5 +186,9 @@ a:hover{
     height: 300px;
     width: 100%;
     border-radius: 10px;
+}
+
+.black_footer_box{
+    background-color: black;
 }
     
