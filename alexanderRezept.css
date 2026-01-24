@@ -190,5 +190,15 @@ a:hover{
 
 .black_footer_box{
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Social-Media{
+    display: flex;
+}
+
+.footer-socialmedia{
+    width: 50px;
 }
     
