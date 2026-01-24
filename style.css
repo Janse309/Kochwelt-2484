@@ -178,7 +178,6 @@ a:hover {
 .news-section-div{
     display: flex;
     justify-content: center;
-    gap: 4px;
 }
 
 .recipes-section .wrapper {
