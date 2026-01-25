@@ -39,6 +39,8 @@ img {
 
 h1 {
     font-size: 50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h2 {
@@ -51,6 +53,8 @@ h2 {
 
 h3 {
     font-size: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 p {
@@ -74,15 +78,17 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0px 1px;
+    border-bottom: 4px solid #e8e8e8;
+    box-shadow: 0 15px 25px 1px #efefef;
     align-items: end;
+
 }
 
 .nav_item {
-    color: black;
+    color: rgba(0, 0, 0);
     text-decoration: none;
     gap: 16px;
-
+    margin-bottom: 8px;
 }
 
 .picture2 {
@@ -101,10 +107,6 @@ a:hover {
     text-decoration-color: green;
 }
 
-.picture {
-    height: 80px;
-}
-
 .padding_top_container {
     padding-top: 25px;
 }
@@ -113,6 +115,12 @@ a:hover {
 
 .full-width {
     width: 100%;
+}
+
+.hero-section {
+    display: block;
+    margin-top: 56px;
+    margin-bottom: 56px;
 }
 
 .margin-left-right {
@@ -125,23 +133,25 @@ a:hover {
     justify-content: center;
 }
 
-.dish-of-the-day {
+.dish-of-the-day-content {
     display: flex;
     gap: 24px;
-    padding-bottom: 60px;
+    padding-top: 56px;
+
 }
 
-.dish-of-the-day-image {
-    width: 300px;
+.hero-image {
+    width: 400px;
+    object-fit: cover;
 }
 
-.dish-of-the-day-container {
+.dish-of-the-day-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.dotd-btn{
+.dotd-btn {
     margin-bottom: 30px;
 }
 
@@ -153,21 +163,21 @@ a:hover {
     padding-bottom: 90px;
 }
 
-.wrapper-headline{
+.wrapper-headline {
     padding-bottom: 30px;
 }
 
-.dish-image-section{
+.dish-image-section {
     display: flex;
     gap: 40px;
 }
 
 .dish-image {
     height: 200px;
-    width: 250px;
+    width: 200px;
 }
 
-.news-section{
+.news-section {
     gap: 32px;
     display: flex;
     align-items: center;
@@ -175,7 +185,7 @@ a:hover {
     margin-bottom: 90px;
 }
 
-.news-section-div{
+.news-section-article {
     display: flex;
     justify-content: center;
 }
@@ -187,9 +197,7 @@ a:hover {
     text-align: center;
 }
 
-.hero-section {
-    display: block;
-}
+
 
 footer {
     margin: 0;
@@ -207,9 +215,126 @@ footer {
     margin-left: 20px;
 }
 
-.logo-footer {
+.header-footer-logo {
     height: 80px;
 }
+
+
+@media(max-width: 1150px) {
+    .hero-image {
+        width: 350px;
+    }
+
+    .dish-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(max-width: 950px) {
+    h2{
+        font-size: 30px;
+    }
+
+        .hero-image{
+        width: 248px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .header-footer-logo {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+
+    .footer-socialmedia {
+        height: 50px;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    .nav_items{
+        display: none;
+    }
+
+    .dish-of-the-day-content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+        margin-bottom: 24px;
+    }
+
+    .hero-image {
+        width: 300px;
+    }
+
+    .dish-of-the-day-heading-responsive {
+        text-align: center;
+    }
+
+    .btn-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .dotd-btn {
+        margin-bottom: 0;
+    }
+
+    .recipes-section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .dish-image-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .dish-image {
+        height: 200px;
+        width: 250px;
+    }
+
+    .news-section-headline {
+        margin-bottom: 24px;
+    }
+
+    .news-section {
+        margin-top: 24px;
+        margin-bottom: 48px;
+        gap: 0;
+    }
+
+    .news-section-article {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .news-section-article img {
+        height: 200px;
+        width: 250px;
+
+    }
+
+}
+
 
 
 @media(max-width: 530px) {
@@ -218,7 +343,7 @@ footer {
         margin-left: 10px;
     }
 
-    .logo-footer {
+    .header-footer-logo {
         height: 50px;
     }
 
