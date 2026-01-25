@@ -54,38 +54,51 @@
 
             <div class="ingredients-calculation-container">
                 Zutaten für
-                <input type="number" min="1" max="50">
-                <button onclick="">Portionen</button>
+                <input type="number" min="1" max="50" id="input-amount">
+                <button onclick="calculateAmount()">Portionen</button>
             </div>
 
             <table>
                 <tr>
-                    <td>Kartoffeln</td>
+                    <td>
+                         <span id="potato">400</span>g Kartoffeln
+                    </td>
                     <!-- 400g -->
                 </tr>
                 <tr>
-                    <td>Feta Light</td>
+                    <td>
+                        <span id="feta">100</span>g Feta Light
+                    </td>
                     <!-- 100g -->
                 </tr>
                 <tr>
-                    <td>Zwiebeln</td>
+                    <td>
+                        <span id="onien">0.5</span> Zwiebeln
+                    </td>
                     <!--1/2  -->
                 </tr>
                 <tr>
-                    <td>Rote Paprika</td>
+                    <td>
+                        <span id="red-paprika">1</span> Rote Paprika
+                    </td>
                     <!-- 1 -->
                 </tr>
                 <tr>
-                    <td>Öl</td>
+                    <td>
+                        <span id="oil">1</span> EL ÖL
+                    </td>
                     <!-- 1 TL -->
                 </tr>
                 <tr>
-                    <td>Creme leicht</td>
+                    <td>
+                        <span id="creme-light">1</span> EL Creme leicht
+                    </td>
                     <!-- 1 EL -->
                 </tr>
-
                 <tr>
-                    <td>Spiegeleier</td>
+                    <td>
+                        <span id="eggs">2</span> Spiegeleier
+                    </td>
                     <!-- 2 Stück -->
                 </tr>
 
