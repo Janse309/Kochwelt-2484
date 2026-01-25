@@ -220,6 +220,10 @@ footer {
     padding-right: 160px;
 }
 
+.content-limitation {
+    max-width: 1440px;
+}
+
 .footer-socialmedia {
     height: 60px;
     margin-left: 20px;
