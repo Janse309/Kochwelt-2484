@@ -1,0 +1,69 @@
+.sandwich_photo {
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.symbol_icon {
+  height: 14px;
+  border-radius: 0;
+}
+
+input {
+  border: 1px solid #efefef;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+td {
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.name {
+  font-size: 24px;
+}
+.mengenanpassung_container {
+  border-top: 1px solid #efefef;
+  padding: 8px 0;
+}
+.rezept_Zutaten {
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 16px;
+}
+.rezept_info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+.info_rezept_neu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.info_rezept_extra {
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 16px;
+}
+.rezept_beschreibung {
+  padding-bottom: 24px;
+}
