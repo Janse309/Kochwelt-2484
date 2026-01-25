@@ -55,7 +55,7 @@
             align-items: center;
             gap: 30px;
         }
-        
+
         .profile-picture {
             width: 70px;
             padding: 8px 32px;
@@ -64,4 +64,8 @@
 
         .name {
             font-size: 24px;
+        }
+
+        input {
+            padding: 8px 32px;
         }
