@@ -210,6 +210,16 @@ footer {
     align-items: center;
 }
 
+.footer-container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
 .footer-socialmedia {
     height: 60px;
     margin-left: 20px;
