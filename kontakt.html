@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="script_kontakt.js"></script>
+    <link rel="stylesheet" href="style_kontakt.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+ <header class="wrapper">
+        <div class="container">
+
+            <div>
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo">
+            </div>
+
+            <nav class="nav_items">
+                <a class="nav_item" href="index.html">Start</a>
+                <a class="nav_item" href="gericht-des-tages.html">Rezept des Tages</a>
+                <a class="nav_item" href="">Kontakt</a>
+                <a class="nav_item" href="">Impressum</a>
+            </nav>
+
+        </div>
+    </header>
+
+        <main class="main-kontakt">
+
+
+        <form onsubmit="sendMail(event)" class="kontakt-container">
+            <h2>Kontaktiere uns</h2>
+            <label for="Name">Dein Name</label>
+            <input class="input-field" type="text" name="name" required>
+
+            <label for="Email">Deine E-Mail</label>
+            <input class="input-field" type="email" name="email" required>
+
+            <label for="Nachricht">Deine Nachricht:</label>
+            <textarea class="input-field2" name="message"></textarea>
+
+            <div class="container-button">
+                <button type="submit" class="button">Abschicken</button>
+            </div>
+        </form>
+
+        <div id="successBox" class="success-box">
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+
+    <footer class="full-width">
+
+        <div class="footer-container">
+
+            <a href="index.html"><img src="./img/logo_kochwelt_ weiss.png" class="header-footer-logo"
+                    alt="Kochweltlogo"></a>
+
+            <div aria-label="Social Media Links">
+                <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./img/facebook.png"
+                        class="footer-socialmedia" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta.png"
+                        class="footer-socialmedia" alt="instagram"></a>
+                <a href="https://x.com/?lang=de" target="_blank"><img src="./img/twitter.png" class="footer-socialmedia"
+                        alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
