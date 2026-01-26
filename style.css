@@ -164,6 +164,7 @@ header {
 
 .news-section-article {
     justify-content: center;
+    gap: 24px;
 }
 
 .section-padding-top-bottom {

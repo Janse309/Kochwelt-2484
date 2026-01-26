@@ -1,10 +1,4 @@
- body {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
-
- .kontakt-container {
+.kontakt-container {
      background-color: #EFEFEF;
      width: 90%;
      max-width: 400px;
@@ -16,7 +10,7 @@
 
  }
 
- .input-field {
+.input-field {
      height: 10px;
      border-radius: 8px;
      border: 1px solid #CCC;
@@ -25,7 +19,7 @@
      font-size: 16px;
  }
 
- .input-field2 {
+.input-field2 {
      height: 210px;
      max-width: 340px;
      border-radius: 8px;
@@ -35,7 +29,7 @@
      font-size: 16px;
  }
 
- .button {
+.button {
      color: white;
      background-color: #008000;
      border-radius: 8px;
@@ -46,52 +40,23 @@
 
  }
 
- .container-button {
+.container-button {
      display: flex;
      justify-content: center;
      margin-top: 20px;
  }
 
- .main-kontakt {
+.main-kontakt {
      height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
  }
 
- h2 {
-     margin-top: 0;
- }
-
- footer {
-     background-color: #232323;
-     width: 100%;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
- }
-
- .footer-wrapper {
-     width: 1200px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     height: 200px;
-     padding: 16px;
 
  }
 
- .footer-socialmedia {
-     height: 60px;
-     margin-left: 20px;
-
- }
-
- .logo-footer {
-     height: 80px;
- }
-
- .success-box {
+.success-box {
      display: none;
      background-color: #d4edda;
      color: #155724;
@@ -103,23 +68,3 @@
      font-size: 14px;
  }
 
- .main-kontakt {
-     height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
-
-
- @media(max-width: 530px) {
-     .footer-socialmedia {
-         height: 35px;
-         margin-left: 10px;
-     }
-
-     .logo-footer {
-         height: 50px;
-     }
-
- }

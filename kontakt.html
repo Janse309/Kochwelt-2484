@@ -13,26 +13,24 @@
 
 
 <body>
+    <header class="full-width">
+        <div class="content-limitation header-container">
 
- <header class="wrapper">
-        <div class="container">
-
-            <div>
+            <a href="index.html">
                 <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo">
-            </div>
+            </a>
 
             <nav class="nav_items">
-                <a class="nav_item" href="index.html">Start</a>
-                <a class="nav_item" href="gericht-des-tages.html">Rezept des Tages</a>
-                <a class="nav_item" href="">Kontakt</a>
-                <a class="nav_item" href="">Impressum</a>
+                <a target="_blank" href="index.html">Start</a>
+                <a target="_blank" href="rezept-des-tages.html">Rezept des Tages</a>
+                <a target="_blank" href="/kontakt.html">Kontakt</a>
+                <a target="_blank" href="">Impressum</a>
             </nav>
 
         </div>
     </header>
 
-        <main class="main-kontakt">
-
+    <main class="main-kontakt">
 
         <form onsubmit="sendMail(event)" class="kontakt-container">
             <h2>Kontaktiere uns</h2>
@@ -50,30 +48,34 @@
             </div>
         </form>
 
-        <div id="successBox" class="success-box">
-
+        <div 
+            id="successBox" class="success-box">
         </div>
-
-    </section>
 
     </main>
 
 
 
     <footer class="full-width">
-
-        <div class="footer-container">
-
-            <a href="index.html"><img src="./img/logo_kochwelt_ weiss.png" class="header-footer-logo"
-                    alt="Kochweltlogo"></a>
+        <div class="content-limitation footer-container">
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png"
+                    alt="Kochwelt Logo">
+            </a>
 
             <div aria-label="Social Media Links">
-                <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./img/facebook.png"
-                        class="footer-socialmedia" alt="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta.png"
-                        class="footer-socialmedia" alt="instagram"></a>
-                <a href="https://x.com/?lang=de" target="_blank"><img src="./img/twitter.png" class="footer-socialmedia"
-                        alt="twitter"></a>
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img class="footer-socialmedia" src="./img/facebook.png"
+                        alt="facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="footer-socialmedia" src="./img/insta.png"
+                        alt="instagram">
+                </a>
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img class="footer-socialmedia" src="./img/twitter.png"
+                        alt="twitter">
+                </a>
             </div>
         </div>
     </footer>
