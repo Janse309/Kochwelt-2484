@@ -192,11 +192,13 @@ a:hover{
 .black_footer_box{
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .Social-Media{
     display: flex;
+    gap: 25px;
 }
 
 .footer-socialmedia{
