@@ -1,6 +1,21 @@
 .sandwich_photo {
   height: 300px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  padding-bottom: 32px;
+}
+
+.rezept_info {
+  padding-bottom: 32px;
+  gap: 20px;
+}
+
+.rezept_Zutaten {
+  align-items: center;
+  background-color: #efefef;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 16px;
 }
 
 .symbol_icon {
@@ -8,14 +23,22 @@
   border-radius: 0;
 }
 
+.mengenanpassung_container {
+  border-top: 1px solid #efefef;
+  padding: 8px 0;
+  align-items: center;
+}
+
 input {
   border: 1px solid #efefef;
   border-radius: 8px;
+  padding: 12px 0;
+  margin-left: 16px;
+  width: 120px;
 }
 
 table {
-  width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 tr:nth-child(odd) {
@@ -27,46 +50,12 @@ td {
   padding: 16px 24px;
 }
 
-.name {
-  font-size: 24px;
-}
-.mengenanpassung_container {
-  border-top: 1px solid #efefef;
-  padding: 8px 0;
-}
-.rezept_Zutaten {
-  display: flex;
+.recipe-responsible {
   align-items: center;
-  background-color: #efefef;
-  padding: 4px 8px;
-  border-radius: 8px;
-  gap: 16px;
-}
-.rezept_info {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  gap: 20px;
-}
-.info_rezept_neu {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin-bottom: 32px;
 }
 
-.info_rezept_extra {
-  display: flex;
-  align-items: center;
-  background-color: #efefef;
-  padding: 4px 8px;
-  border-radius: 8px;
-  gap: 16px;
-}
-.rezept_beschreibung {
-  padding-bottom: 24px;
-}
-.h1_recipe-title {
-  margin-top: 24px;
-  margin-bottom: 24px;
+.name {
+  font-size: 24px;
 }

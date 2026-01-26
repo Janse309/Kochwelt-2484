@@ -1,68 +1,67 @@
 .headline-picture {
-    height: 300px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    padding-bottom: 32px;
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  padding-bottom: 32px;
 }
 
 .generally-recipe-information-container {
-    padding-bottom: 32px;
-    gap: 20px;
-
+  padding-bottom: 32px;
+  gap: 20px;
 }
 
 .generally-recipe-information-item {
-    align-items: center;
-    background-color: #efefef;
-    padding: 4px 8px;
-    border-radius: 8px;
-    gap: 16px;
+  align-items: center;
+  background-color: #efefef;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 16px;
 }
 
 .icon {
-    height: 14px;
-    border-radius: 0;
+  height: 14px;
+  border-radius: 0;
 }
 
 .ingredients-calculation-container {
-    border-top: 1px solid #efefef;
-    padding: 8px 0;
-    align-items: center;
+  border-top: 1px solid #efefef;
+  padding: 8px 0;
+  align-items: center;
 }
 
 input {
-    border: 1px solid #efefef;
-    border-radius: 8px;
-    padding: 12px 0;
-    margin-left: 16px;
-    width: 120px;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  padding: 12px 0;
+  margin-left: 16px;
+  width: 120px;
 }
 
 table {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 tr:nth-child(odd) {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
 td {
-    border-radius: 8px;
-    padding: 16px 24px;
+  border-radius: 8px;
+  padding: 16px 24px;
 }
 
 .recipe-responsible {
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 32px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 32px;
 }
 
 .profile-picture {
-    width: 70px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+  width: 70px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
 
 .name {
-    font-size: 24px;
+  font-size: 24px;
 }

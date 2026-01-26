@@ -13,23 +13,26 @@
   </head>
 
   <body>
-    <header class="wrapper">
-      <div class="container">
-        <img
-          class="header-footer-logo"
-          src="./img/logo.png"
-          alt="Kochwelt Logo"
-        />
+    <header class="full-width">
+      <div class="content-limitation header-container">
+        <a href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
+
         <nav class="nav_items">
-          <a class="nav_item" href="index.html">Start</a>
-          <a class="nav_item" href="gericht-des-tages.html">Rezept des Tages</a>
-          <a class="nav_item" href="">Kontakt</a>
-          <a class="nav_item" href="">Impressum</a>
+          <a target="_blank" href="index.html">Start</a>
+          <a target="_blank" href="rezept-des-tages.html">Rezept des Tages</a>
+          <a target="_blank" href="/kontakt.html">Kontakt</a>
+          <a target="_blank" href="">Impressum</a>
         </nav>
       </div>
     </header>
 
-    <main class="margin-left-right">
+    <main class="content-limitation">
       <section>
         <h1 class="h1_recipe-title">Orginal Sandwich</h1>
 
@@ -92,12 +95,12 @@
 
       <section>
         <h2>Zubereitung</h2>
-        <div class="info_rezept_neu">
-          <div class="info_rezept_extra">
+        <div class="rezept_info">
+          <div class="rezept_Zutaten">
             <img class="symbol_icon" src="./img/clock-regular.svg" alt="" />
             Vorbereitung ca. 10 Min
           </div>
-          <div class="info_rezept_extra">
+          <div class="rezept_Zutaten">
             <img class="symbol_icon" src="./img/clock-regular.svg" alt="" />
             Gesamtzeit ca. 20 Min
           </div>
@@ -107,32 +110,38 @@
     </main>
 
     <footer class="full-width">
-      <a href="index.html"
-        ><img
-          src="./img/logo_kochwelt_ weiss.png"
-          class="header-footer-logo"
-          alt="Kochweltlogo"
-      /></a>
+      <div class="content-limitation footer-container">
+        <a href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo_kochwelt_ weiss.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
 
-      <div aria-label="Social Media Links">
-        <a href="https://www.facebook.com/?locale=de_DE" target="_blank"
-          ><img
-            src="./img/facebook.png"
-            class="footer-socialmedia"
-            alt="facebook"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            src="./img/insta.png"
-            class="footer-socialmedia"
-            alt="instagram"
-        /></a>
-        <a href="https://x.com/?lang=de" target="_blank"
-          ><img
-            src="./img/twitter.png"
-            class="footer-socialmedia"
-            alt="twitter"
-        /></a>
+        <div aria-label="Social Media Links">
+          <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+            <img
+              class="footer-socialmedia"
+              src="./img/facebook.png"
+              alt="facebook"
+            />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <img
+              class="footer-socialmedia"
+              src="./img/insta.png"
+              alt="instagram"
+            />
+          </a>
+          <a target="_blank" href="https://x.com/?lang=de">
+            <img
+              class="footer-socialmedia"
+              src="./img/twitter.png"
+              alt="twitter"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
