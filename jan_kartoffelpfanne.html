@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoffelpfanne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_recipe.css">
+    <script src="jan_kartoffelpfanne.js"></script>
+    <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css">
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="full-width">
+        <div class="content-limitation header-container">
+
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
+            </a>
+
+            <nav class="nav_items">
+                <a target="_blank" href="index.html">Start</a>
+                <a target="_blank" href="rezept-des-tages.html">Rezept des Tages</a>
+                <a target="_blank" href="kontakt.html">Kontakt</a>
+                <a target="_blank" href="">Impressum</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="content-limitation">
+
+        <section>
+            <h1>Kartoffelpfanne</h1>
+            <img class="headline-picture" src="./img/jan_gericht.png" alt="Kartoffelpfanne Picture">
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    45 Min.
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/brain-solid.svg" alt="Gehirn-Icon">
+                    simpel
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
+                    22.01.2026
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Zutaten</h2>
+
+            <div class="ingredients-calculation-container">
+                Zutaten für
+                <input type="number" min="1" max="50" id="input-amount">
+                <button onclick="calculateAmount()">Portionen</button>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <span id="potato">400</span>g Kartoffeln
+                    </td>
+                    <!-- 400g -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="feta">100</span>g Feta Light
+                    </td>
+                    <!-- 100g -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="onien">0.5</span> Zwiebeln
+                    </td>
+                    <!--1/2  -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="red-paprika">1</span> Rote Paprika
+                    </td>
+                    <!-- 1 -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="oil">1</span> EL ÖL
+                    </td>
+                    <!-- 1 TL -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="creme-light">1</span> EL Creme leicht
+                    </td>
+                    <!-- 1 EL -->
+                </tr>
+                <tr>
+                    <td>
+                        <span id="eggs">2</span> Spiegeleier
+                    </td>
+                    <!-- 2 Stück -->
+                </tr>
+
+                <tr>
+                    <td>Salz, Pfeffer, Gartenkräuter</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Zubereitung</h2>
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    ca. 15 Minuten
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    Gesamtzeit ca. 30 Minuten
+                </div>
+            </div>
+            <p class="preparation-text">
+                Kartoffeln vierteln und in etwa 400ml Wasser mit Salz und Deckel köcheln lassen, bis das Wasser
+                verdampft ist.
+
+                Dann in etwas Öl anbraten, bis leicht braun. Paprika und Zwiebeln dazu. Zu letzt den Feta Light und
+                mit Salz, Pfeffer, Gartenkräutern würzen. 2 Spiegeleier & fertig!</p>
+        </section>
+
+
+        <section>
+            <h3>Rezept erstellt von</h3>
+            <div class="recipe-responsible">
+                <img class="profile-picture-jan" src="./img/jan3.png" alt="profile picture">
+                <span class="name">Jan</span>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="full-width">
+        <div class="content-limitation footer-container">
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
+            </a>
+
+            <div aria-label="Social Media Links">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
+                </a>
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
