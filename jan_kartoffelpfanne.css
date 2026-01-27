@@ -1,13 +1,16 @@
 .headline-picture {
-  height: 300px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  padding-bottom: 32px;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .generally-recipe-information-item {
- padding-bottom: 32px;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    padding: 4px 8px;
+    border-radius: 8px;
+    gap: 16px;
 }
 
 .icon {
