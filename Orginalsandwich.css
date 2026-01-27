@@ -1,16 +1,16 @@
-.sandwich_photo {
+.headline-picture {
   height: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   padding-bottom: 32px;
 }
 
-.rezept_info {
+.generally-recipe-information-container {
   padding-bottom: 32px;
   gap: 20px;
 }
 
-.rezept_Zutaten {
+.generally-recipe-information-item {
   align-items: center;
   background-color: #efefef;
   padding: 4px 8px;
@@ -18,12 +18,12 @@
   gap: 16px;
 }
 
-.symbol_icon {
+.icon {
   height: 14px;
   border-radius: 0;
 }
 
-.mengenanpassung_container {
+.ingredients-calculation-container {
   border-top: 1px solid #efefef;
   padding: 8px 0;
   align-items: center;
@@ -58,4 +58,12 @@ td {
 
 .name {
   font-size: 24px;
+}
+.rezept_beschreibung {
+  padding-bottom: 32px;
+}
+.profile-picture {
+  width: 70px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }

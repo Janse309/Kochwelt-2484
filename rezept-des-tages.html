@@ -36,58 +36,56 @@
       <section>
         <h1 class="h1_recipe-title">Orginal Sandwich</h1>
 
-        <img class="sandwich_photo" src="./img/finalsandwich.jpg" alt="" />
+        <img class="headline-picture" src="./img/finalsandwich.jpg" alt="" />
 
-        <div class="rezept_info">
-          <div class="rezept_Zutaten">
-            <img class="symbol_icon" src="./img/clock-regular.svg" alt="" />
+        <div class="generally-recipe-information-container">
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
             10 Min.
           </div>
-          <div class="rezept_Zutaten">
-            <img class="symbol_icon" src="./img/brain-solid.svg" alt="" />
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/brain-solid.svg" alt="" />
             SIMPEL
           </div>
-          <div class="rezept_Zutaten">
-            <img
-              class="symbol_icon"
-              src="./img/calendar-alt-regular.svg"
-              alt=""
-            />
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/calendar-alt-regular.svg" alt="" />
             26.01.2026
           </div>
         </div>
 
-        <div class="mengenanpassung_container">
+        <div class="ingredients-calculation-container">
           Zutaten für
-          <input type="number" min="1" value="1" />
-          <button type="button">Portionen</button>
+          <input type="number" id="portion-input" value="1" min="1" />
+          <button onclick="calculatePortions()">Portionen berechnen</button>
         </div>
 
         <section>
           <table>
             <tr>
-              <td>1. Toast</td>
+              <td data-base="500" data-unit="g">1 Toast</td>
             </tr>
             <tr>
-              <td>2. Salami</td>
+              <td data-base="2" data-unit="Scheiben">2 Scheiben Salami</td>
             </tr>
             <tr>
-              <td>3. Rote Zwiebeln</td>
+              <td data-base="2" data-unit="Scheiben">
+                3 Scheiben Rote Zwiebeln
+              </td>
             </tr>
             <tr>
-              <td>4. Cheddar</td>
+              <td data-base="2" data-unit="Scheiben">2 Scheiben Cheddar</td>
             </tr>
             <tr>
-              <td>5. Roma Salat</td>
+              <td data-base="2" data-unit="Scheiben">2 Scheiben Roma Salat</td>
             </tr>
             <tr>
-              <td>6. Tomaten</td>
+              <td data-base="2" data-unit="Scheiben">2 Scheiben Tomaten</td>
             </tr>
             <tr>
-              <td>6. Salz und Pfeffer</td>
+              <td data-base="1" data-unit="">Salz & Pfeffer nach Geschmack</td>
             </tr>
             <tr>
-              <td>6. Senf</td>
+              <td data-base="1" data-unit="TL">1 TL Senf</td>
             </tr>
           </table>
         </section>
@@ -95,17 +93,30 @@
 
       <section>
         <h2>Zubereitung</h2>
-        <div class="rezept_info">
-          <div class="rezept_Zutaten">
-            <img class="symbol_icon" src="./img/clock-regular.svg" alt="" />
+        <div class="generally-recipe-information-container">
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
             Vorbereitung ca. 10 Min
           </div>
-          <div class="rezept_Zutaten">
-            <img class="symbol_icon" src="./img/clock-regular.svg" alt="" />
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
             Gesamtzeit ca. 20 Min
           </div>
         </div>
-        <p class="rezept_beschreibung">Muss noch was rein xyz</p>
+        <p class="rezept_beschreibung">
+          Zuerst den Toast goldbraun rösten. Danach den Senf auf eine Scheibe
+          Toast geben und gleichmäßig verteilen. Anschließend die restlichen
+          Zutaten schichten und mit einer weiteren Scheibe Toast abschließen.
+          Und zum Schluss noch einmal etwa 5 Minuten in der Pfanne rösten, bis
+          der Käse geschmolzen ist. Und Fertig ist Kevins Sandwich. Bon Appétit!
+        </p>
+      </section>
+      <section>
+        <h3>Rezept erstellt von</h3>
+        <div class="recipe-responsible">
+          <img class="profile-picture" src="./img/elena_avatar.png" alt="" />
+          <span class="name">Kevin B.</span>
+        </div>
       </section>
     </main>
 
