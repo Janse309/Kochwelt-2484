@@ -62,6 +62,13 @@ td {
   border-radius: 50%;
 }
 
+.profile-picture-jan {
+    width: 70px;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
 .name {
   font-size: 24px;
 }
