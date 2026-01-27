@@ -53,13 +53,14 @@
           </div>
         </div>
 
-        <div class="ingredients-calculation-container">
-          Zutaten für
-          <input type="number" id="portion-input" value="1" min="1" />
-          <button onclick="calculatePortions()">Portionen berechnen</button>
-        </div>
-
         <section>
+          <h2>Zutaten</h2>
+
+          <div class="ingredients-calculation-container">
+            Zutaten für
+            <input type="number" min="1" max="50" id="input-amount" />
+            <button onclick="calculateAmount()">Portionen</button>
+          </div>
           <table>
             <tr>
               <td data-base="500" data-unit="g">1 Toast</td>
