@@ -1,11 +1,11 @@
 const ingredients = [
   { id: "toast", base: 2 },
-  { id: "", base: 100 },
-  { id: "", base: 0.5, comma: true },
-  { id: "", base: 1 },
-  { id: "", base: 1 },
-  { id: "", base: 2 },
-  { id: "", base: 1 },
+  { id: "salami", base: 2 },
+  { id: "onion", base: 3 },
+  { id: "cheddar", base: 2 },
+  { id: "roma", base: 2 },
+  { id: "tomato", base: 2 },
+  { id: "mustard", base: 1 },
 ];
 
 function calculateAmount() {
