@@ -29,10 +29,6 @@ a:hover{
     text-decoration-color: green;
 }
 
-.picture{
-    height: 80px;
-}
-
 .padding_top_container{
     padding-top: 25px;
 }
@@ -84,8 +80,8 @@ a:hover{
 }
 
 .picture{
-    width: 160px;
-    height: 160px;
+    height: 45px;
+    width: auto;
     
 }
 
@@ -206,6 +202,9 @@ a:hover{
 }
 
 .logo-footer{
-    height: 80px;
-}
+    height: 45px;
+    width: auto;
     
+}
+
+ 
