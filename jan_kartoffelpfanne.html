@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartoffelpfanne</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="jan_kartoffelpfanne.css">
+    <link rel="stylesheet" href="style_recipe.css">
+    <script src="jan_kartoffelpfanne.js"></script>
     <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css">
     <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
-    <script src="jan_kartoffelpfanne.js"></script>
 </head>
 
 <body>
 
-    <header class="wrapper">
+    <header class="full-width">
+        <div class="content-limitation header-container">
 
-        <div class="container">
-            <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo">
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
+            </a>
+
             <nav class="nav_items">
-                <a class="nav_item" href="index.html">Start</a>
-                <a class="nav_item" href="gericht-des-tages.html">Rezept des Tages</a>
-                <a class="nav_item" href="">Kontakt</a>
-                <a class="nav_item" href="">Impressum</a>
+                <a target="_blank" href="index.html">Start</a>
+                <a target="_blank" href="rezept-des-tages.html">Rezept des Tages</a>
+                <a target="_blank" href="kontakt.html">Kontakt</a>
+                <a target="_blank" href="">Impressum</a>
             </nav>
+
         </div>
     </header>
 
-    <main class="margin-left-right">
+    <main class="content-limitation">
 
         <section>
             <h1>Kartoffelpfanne</h1>
@@ -53,38 +57,51 @@
 
             <div class="ingredients-calculation-container">
                 Zutaten für
-                <input type="number" min="1" max="50">
-                <button onclick="">Portionen</button>
+                <input type="number" min="1" max="50" id="input-amount">
+                <button onclick="calculateAmount()">Portionen</button>
             </div>
 
             <table>
                 <tr>
-                    <td>Kartoffeln</td>
+                    <td>
+                        <span id="potato">400</span>g Kartoffeln
+                    </td>
                     <!-- 400g -->
                 </tr>
                 <tr>
-                    <td>Feta Light</td>
+                    <td>
+                        <span id="feta">100</span>g Feta Light
+                    </td>
                     <!-- 100g -->
                 </tr>
                 <tr>
-                    <td>Zwiebeln</td>
+                    <td>
+                        <span id="onien">0.5</span> Zwiebeln
+                    </td>
                     <!--1/2  -->
                 </tr>
                 <tr>
-                    <td>Rote Paprika</td>
+                    <td>
+                        <span id="red-paprika">1</span> Rote Paprika
+                    </td>
                     <!-- 1 -->
                 </tr>
                 <tr>
-                    <td>Öl</td>
+                    <td>
+                        <span id="oil">1</span> EL ÖL
+                    </td>
                     <!-- 1 TL -->
                 </tr>
                 <tr>
-                    <td>Creme leicht</td>
+                    <td>
+                        <span id="creme-light">1</span> EL Creme leicht
+                    </td>
                     <!-- 1 EL -->
                 </tr>
-
                 <tr>
-                    <td>Spiegeleier</td>
+                    <td>
+                        <span id="eggs">2</span> Spiegeleier
+                    </td>
                     <!-- 2 Stück -->
                 </tr>
 
@@ -118,7 +135,7 @@
         <section>
             <h3>Rezept erstellt von</h3>
             <div class="recipe-responsible">
-                <img class="profile-picture" src="./img/jan3.png" alt="profile picture">
+                <img class="profile-picture-jan" src="./img/jan3.png" alt="profile picture">
                 <span class="name">Jan</span>
             </div>
         </section>
@@ -127,16 +144,27 @@
 
 
     <footer class="full-width">
+<<<<<<< HEAD
         <a href="index.html"><img src="./img/logo_kochwelt_ weiss.png" class="header-footer-logo"
                 alt="Kochwelt Logo"></a>
+=======
+        <div class="content-limitation footer-container">
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
+            </a>
+>>>>>>> master
 
-        <div aria-label="Social Media Links">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./img/facebook.png"
-                    class="footer-socialmedia" alt="facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta.png" class="footer-socialmedia"
-                    alt="instagram"></a>
-            <a href="https://x.com/?lang=de" target="_blank"><img src="./img/twitter.png" class="footer-socialmedia"
-                    alt="twitter"></a>
+            <div aria-label="Social Media Links">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
+                </a>
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
+                </a>
+            </div>
         </div>
     </footer>
 

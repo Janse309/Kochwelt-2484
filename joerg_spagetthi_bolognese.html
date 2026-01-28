@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jörg´s Spagetthi Bolognese</title>
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css">
+    <link rel="stylesheet" href="spagetthi_style.css">
+    <script src="./spagetthi_script.js" defer></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+       <header class="full-width">
+        <div class="content-limitation header-container">
+
+            <a href="index.html">
+                <img 
+                    class="header-footer-logo" 
+                    src="./img/logo.png" 
+                    alt="Kochwelt Logo"
+                />
+            </a>
+
+            <nav class="nav_items">
+                <a target="_blank" href="index.html">Start</a>
+                <a target="_blank" href="gericht-des-tages.html">Rezept des Tages</a>
+                <a target="_blank" href="kontakt.html">Kontakt</a>
+                <a target="_blank" href="">Impressum</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="content-limitation">
+        <section>
+            <h1 class="h1_recipe-title">Jörg´s Spagetthi Bolognese</h1>
+            <img class="headline-picture" src="./img/Spagetthi_bolognese.png" alt="Bild Spagetthi Bolognese">
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    60 Min.
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/brain-solid.svg" alt="Gehirn-Icon">
+                    simpel
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/calendar-alt-regular.svg" alt="Kalender-Icon">
+                    24.01.2026
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Zutaten</h2>
+
+            <div class="ingredients-calculation-container">
+                Zutaten für
+                <input type="number" id="portion-input" value="4" min="1">
+                <button onclick="calculatePortions()">Portionen berechnen</button>
+            </div>
+            <table id="ingredients-table">
+                <tr>
+                    <td data-base="500" data-unit="g">500 g Hackfleisch</td>
+                </tr>
+                <tr>
+                    <td data-base="2" data-unit="Stangen">2 Stangen Staudensellerie</td>
+                </tr>
+                <tr>
+                    <td data-base="1" data-unit="Stück">1 Zwiebel</td>
+                </tr>
+                <tr>
+                    <td data-base="2" data-unit="Stück">2 Karotten</td>
+                </tr>
+                <tr>
+                    <td data-base="100" data-unit="g">100 g Pancetta</td>
+                </tr>
+                <tr>
+                    <td data-base="1" data-unit="TL">1 TL Oregano</td>
+                </tr>
+                <tr>
+                    <td data-base="400" data-unit="ml">400 ml Brühe</td>
+                </tr>
+                <tr>
+                    <td data-base="1" data-unit="">Salz & Pfeffer nach Geschmack</td>
+                </tr>
+                <tr>
+                    <td data-base="400" data-unit="g">400 g Spaghetti</td>
+                </tr>
+                <tr>
+                    <td data-base="400" data-unit="ml">400 ml passierte Tomaten</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Zubereitung</h2>
+            <div class="generally-recipe-information-container">
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    ca. 20 Minuten
+                </div>
+                <div class="generally-recipe-information-item">
+                    <img class="icon" src="./img/clock-regular.svg" alt="Uhr-Icon">
+                    Gesamtzeit ca. 60 Minuten
+                </div>
+            </div>
+            <p>Man nimmt das gesamte Gemüse, schneidet es grob klein und gibt es in den Mixer. Den Pancetta in dünne
+                Streifen schneiden.
+                In einem großen Topf Olivenöl erhitzen und den Pancetta darin knusprig ausbraten. Währenddessen das
+                Gemüse fein pürieren. Das gemixte Gemüse zum Pancetta geben und alles zugedeckt etwa 10 Minuten dünsten,
+                dabei regelmäßig umrühren.
+                Anschließend das Hackfleisch hinzufügen und kräftig anbraten, bis es vollständig durchgegart ist. Danach
+                die passierten Tomaten sowie die Brühe einrühren, alles gut vermischen und aufkochen lassen.
+                Bei mittlerer Hitze mindestens eine Stunde sanft köcheln lassen – je länger die Sauce köchelt, desto
+                intensiver und runder wird ihr Geschmack. </p>
+        </section>
+
+        <section>
+            <h3>Rezept erstellt von</h3>
+            <div class="recipe-responsible">
+                <img class="profile-picture" src="./img/XX" alt="">
+                <span class="name">Jörg</span>
+            </div>
+        </section>
+    </main>
+
+ <footer class="full-width">
+        <div class="content-limitation footer-container">
+            <a href="index.html">
+                <img 
+                    class="header-footer-logo" 
+                    src="./img/logo_kochwelt_ weiss.png"
+                    alt="Kochwelt Logo"
+                />
+            </a>
+
+            <div aria-label="Social Media Links">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/facebook.png"
+                        alt="facebook"
+                    />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/insta.png"
+                        alt="instagram"
+                    />
+                </a>
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/twitter.png"
+                        alt="twitter"
+                    />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

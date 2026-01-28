@@ -1,0 +1,67 @@
+.kontakt-container {
+     background-color: #EFEFEF;
+     width: 90%;
+     max-width: 400px;
+     border-radius: 16px;
+     padding: 20px;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+
+ }
+
+.input-field {
+     height: 10px;
+     border-radius: 8px;
+     border: 1px solid #CCC;
+     margin-bottom: 15px;
+     padding: 8px;
+     font-size: 16px;
+ }
+
+.input-field2 {
+     height: 210px;
+     max-width: 340px;
+     border-radius: 8px;
+     border: 1px solid #CCC;
+     margin-bottom: 15px;
+     padding: 8px;
+     font-size: 16px;
+ }
+
+.button {
+     color: white;
+     background-color: #008000;
+     border-radius: 8px;
+     border: 0;
+     cursor: pointer;
+     padding: 8px 32px;
+     width: 200px;
+
+ }
+
+.container-button {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+.main-kontakt {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.success-box {
+     display: none;
+     background-color: #d4edda;
+     color: #155724;
+     border: 1px solid #c3e6cb;
+     border-radius: 8px;
+     padding: 12px;
+     margin-bottom: 15px;
+     text-align: center;
+     font-size: 14px;
+ }
+
