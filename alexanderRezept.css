@@ -198,8 +198,10 @@ a:hover{
 }
 
 .footer-socialmedia{
-    width: 50px;
+    height: 45px;
+    width: auto;
 }
+
 
 .logo-footer{
     height: 45px;
