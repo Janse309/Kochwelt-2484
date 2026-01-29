@@ -1,35 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .content-limitation {
   max-width: 1440px;
-  padding-left: 160px;
-  padding-right: 160px;
+  margin: 0 auto;
 }
 
 .full-width {
-  width: 100%;
+  width: calc(100% + 96px);
+  /* Padding aus Body wieder kompensieren */
+  margin-left: -48px;
+  margin-right: -48px;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+
 }
 
 main {
   flex: 1;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
 }
 
 section {
@@ -75,7 +79,7 @@ h3 {
 }
 
 .h2-padding-top {
-    padding-top: 48px;
+  padding-top: 48px;
 }
 
 p {
@@ -101,17 +105,14 @@ header {
   display: flex;
   justify-content: center;
   height: 100px;
-
-  /* align-items: end; */
 }
 
 .header-container {
   align-items: flex-end;
   justify-content: space-between;
   flex: 1;
-  /* border-bottom: 4px solid #e8e8e8;
-    box-shadow: 0 15px 25px 1px #efefef;
-    align-items: end; */
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .header-footer-logo {
@@ -197,6 +198,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .footer-socialmedia {
@@ -212,6 +215,11 @@ footer {
   .dish-image {
     height: 150px;
     width: 150px;
+  }
+
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -246,6 +254,11 @@ footer {
 @media (max-width: 768px) {
   .nav_items {
     display: none;
+  }
+
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .dish-of-the-day-content {
