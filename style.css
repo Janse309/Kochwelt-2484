@@ -29,7 +29,6 @@ body {
   margin: 0;
   padding-left: 48px;
   padding-right: 48px;
-
 }
 
 main {
@@ -167,7 +166,7 @@ header {
 
 .dish-image {
   height: 200px;
-  width: 200px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -208,32 +207,26 @@ footer {
 }
 
 @media (max-width: 1150px) {
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
   .hero-image {
     width: 350px;
   }
 
   .dish-image {
     height: 150px;
-    width: 150px;
-  }
-
-  body {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media (max-width: 950px) {
-  h2 {
-    font-size: 30px;
-  }
-
-  .hero-image {
-    width: 248px;
   }
 }
 
 @media (max-width: 850px) {
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
   .header-footer-logo {
     height: 60px;
   }
@@ -251,14 +244,15 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
+  
+  
   .nav_items {
     display: none;
   }
 
-  body {
-    padding-left: 16px;
-    padding-right: 16px;
+  .hero-image {
+    width: 300px;
   }
 
   .dish-of-the-day-content {
@@ -266,10 +260,6 @@ footer {
     align-items: center;
     padding-bottom: 0;
     margin-bottom: 24px;
-  }
-
-  .hero-image {
-    width: 300px;
   }
 
   .dish-of-the-day-heading-responsive {
@@ -295,11 +285,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-  }
-
-  .dish-image {
-    height: 200px;
-    width: 250px;
   }
 
   .news-section {
