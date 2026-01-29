@@ -2,11 +2,11 @@
   height: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .generally-recipe-information-container {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   gap: 20px;
 }
 
