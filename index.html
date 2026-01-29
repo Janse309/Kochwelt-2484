@@ -1,168 +1,133 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt</title>
-    <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
-  </head>
 
-  <body>
-    <header class="full-width">
-      <div class="content-limitation header-container">
-        <a href="index.html">
-          <img
-            class="header-footer-logo"
-            src="./img/logo.png"
-            alt="Kochwelt Logo"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
+  <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
+  <script src="nav-bar.js"></script>
+</head>
+
+<body>
+
+  <header class="full-width">
+    <div class="content-limitation header-container">
+
+      <a href="index.html">
+        <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
+      </a>
+
+      <nav class="content-nav">
+        <ul class="nav_items menu-icon">
+          <li class="hideOnMobile"><a href="index.html">Start</a></li>
+          <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+          <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+          <li class="hiddenFullSize" onclick="showSidebar()"><img src="./img/menu-icon.svg" alt="Menu Button"></a></li>
+        </ul>
+
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-limitation hero-section">
+      <h1>Rezept des Tages</h1>
+
+      <div class="section-padding-top-bottom hero-container padding">
+        <a target="_self" href="rezept-des-tages.html">
+          <img class="hero-image" src="./img/finalsandwich.jpg" alt="dish of the day picture" />
         </a>
+        <div class="dish-of-the-day-description-container">
+          <h2 class="dotd-h2-responsive">Sandwich</h2>
 
-        <nav class="nav_items">
-          <a target="_self" href="index.html">Start</a>
-          <a target="_self" href="rezept-des-tages.html">Rezept des Tages</a>
-          <a target="_self" href="kontakt.html">Kontakt</a>
-          <a target="_self" href="impressum.html">Impressum</a>
-        </nav>
+          <p class="dotd-description">
+            Eine geheime Zutat aus dem Bereich Mood Food, die für den
+            absoluten Frischekick sorgt. In unter 20 Minuten auf dem Tisch –
+            versprochen! Schmeckt am nächsten Tag fast noch besser.
+          </p>
+
+          <button class="dotd-button" href="rezept-des-tages.html">
+            Rezept öffnen
+          </button>
+
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="content-limitation hero-section">
-        <h1>Rezept des Tages</h1>
+    <section class="full-width recipes-section">
+      <div class="section-padding-top-bottom content-limitation recipes-container">
+        <h2>Lust auf was Neues ?</h2>
 
-        <div class="section-padding-top-bottom hero-container padding">
-          <a target="_self" href="rezept-des-tages.html">
-            <img
-              class="hero-image"
-              src="./img/finalsandwich.jpg"
-              alt="dish of the day picture"
-            />
+        <div class="dish-image-container">
+          <a target="_self" href="jan_kartoffelpfanne.html">
+            <img class="dish-image" src="./img/jan_gericht.png" alt="Picture Potato with Paprika and Cheese" />
+            <h3>Kartoffelpfanne</h3>
           </a>
-          <div class="dish-of-the-day-description-container">
-            <h2 class="dotd-h2-responsive">Sandwich</h2>
 
-            <p class="dotd-description">
-              Eine geheime Zutat aus dem Bereich Mood Food, die für den
-              absoluten Frischekick sorgt. In unter 20 Minuten auf dem Tisch –
-              versprochen! Schmeckt am nächsten Tag fast noch besser.
-            </p>
-
-            <button 
-              class="dotd-button"
-              href="rezept-des-tages.html">
-              Rezept öffnen
-            </button>
-            
-          </div>
-        </div>
-      </section>
-
-      <section class="full-width recipes-section">
-        <div
-          class="section-padding-top-bottom content-limitation recipes-container"
-        >
-          <h2>Lust auf was Neues ?</h2>
-
-          <div class="dish-image-container">
-            <a target="_self" href="jan_kartoffelpfanne.html">
-              <img
-                class="dish-image"
-                src="./img/jan_gericht.png"
-                alt="Picture Potato with Paprika and Cheese"
-              />
-              <h3>Kartoffelpfanne</h3>
-            </a>
-
-            <a target="_self" href="alexanderrezept.html">
-              <img
-                class="dish-image"
-                src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg"
-                alt="Picture of conchiglioni-ripieni-gorgonzola-e-funghi"
-              />
-              <h3>conchiglioni</h3>
-            </a>
-
-            <a target="_self" href="joerg_spagetthi_bolognese.html">
-              <img
-                class="dish-image"
-                src="./img/Spagetthi_bolognese.png"
-                alt="Bild von Spagetthi Bolognese"
-              />
-              <h3>Spagetthi Bolognese</h3>
-            </a>
-
-            <a target="_self" href="elenas_wintersalat.html">
-              <img
-                class="dish-image"
-                src="./img/elena_wintersalat.png"
-                alt="Bild eines Salates"
-              />
-              <h3>Wintersalat</h3>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="section-padding-top-bottom content-limitation news-section"
-      >
-        <h2>Ein Dessert zum Verlieben....</h2>
-        <div class="news-section-article">
-          <span
-            >Saftiger Schokoladenkuchen, eine feine cremige Schicht und reife
-            Banane verbinden sich zu einem ausgewogenen Dessert mit angenehmer
-            Süße. Knusprige Waffelröllchen setzen einen leichten Kontrast und
-            runden das Ganze ab. Ein schlichtes, aber sehr harmonisches Dessert,
-            das mit ehrlichem Geschmack überzeugt.</span
-          >
-          <img
-            class="dish-image"
-            src="./img/dessertzumverlieben.jpg"
-            alt="dessert zum Verlieben"
-          />
-        </div>
-      </section>
-    </main>
-
-    <footer class="full-width">
-      <div class="content-limitation footer-container">
-        <a href="index.html">
-          <img
-            class="header-footer-logo"
-            src="./img/logo_kochwelt_ weiss.png"
-            alt="Kochwelt Logo"
-          />
-        </a>
-
-        <div aria-label="Social Media Links">
-          <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
-            <img
-              class="footer-socialmedia"
-              src="./img/facebook.png"
-              alt="facebook"
-            />
+          <a target="_self" href="alexanderrezept.html">
+            <img class="dish-image" src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg"
+              alt="Picture of conchiglioni-ripieni-gorgonzola-e-funghi" />
+            <h3>conchiglioni</h3>
           </a>
-          <a target="_blank" href="https://www.instagram.com/">
-            <img
-              class="footer-socialmedia"
-              src="./img/insta.png"
-              alt="instagram"
-            />
+
+          <a target="_self" href="joerg_spagetthi_bolognese.html">
+            <img class="dish-image" src="./img/Spagetthi_bolognese.png" alt="Bild von Spagetthi Bolognese" />
+            <h3>Spagetthi Bolognese</h3>
           </a>
-          <a target="_blank" href="https://x.com/?lang=de">
-            <img
-              class="footer-socialmedia"
-              src="./img/twitter.png"
-              alt="twitter"
-            />
+
+          <a target="_self" href="elenas_wintersalat.html">
+            <img class="dish-image" src="./img/elena_wintersalat.png" alt="Bild eines Salates" />
+            <h3>Wintersalat</h3>
           </a>
         </div>
       </div>
-    </footer>
+    </section>
 
- 
-  </body>
+    <section class="section-padding-top-bottom content-limitation news-section">
+      <h2>Ein Dessert zum Verlieben....</h2>
+      <div class="news-section-article">
+        <span>Saftiger Schokoladenkuchen, eine feine cremige Schicht und reife
+          Banane verbinden sich zu einem ausgewogenen Dessert mit angenehmer
+          Süße. Knusprige Waffelröllchen setzen einen leichten Kontrast und
+          runden das Ganze ab. Ein schlichtes, aber sehr harmonisches Dessert,
+          das mit ehrlichem Geschmack überzeugt.</span>
+        <img class="dish-image" src="./img/dessertzumverlieben.jpg" alt="dessert zum Verlieben" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="full-width">
+    <div class="content-limitation footer-container">
+      <a href="index.html">
+        <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
+      </a>
+
+      <div aria-label="Social Media Links">
+        <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+          <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
+        </a>
+        <a target="_blank" href="https://x.com/?lang=de">
+          <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>

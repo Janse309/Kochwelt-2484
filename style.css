@@ -121,10 +121,72 @@ header {
   height: 80px;
 }
 
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+
+nav a{
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .nav_items {
   display: flex;
   gap: 16px;
   margin-bottom: 8px;
+}
+
+.content-nav{
+  position: relative;
+}
+
+.sidebar{
+    position: fixed;
+    top: 96px;
+    right: -250px; /* Gleiche Breite wie die Sidebar, nur negativ */
+    width: 250px;
+    height: 100vh;
+    background-color: #efefef;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.sidebar-open {
+    right: 0;
+}
+
+.sidebar a:hover{
+  background-color: rgb(150, 150, 150);
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.hiddenFullSize{
+  display: none;
+  height: 24px;
+
 }
 
 /* hier break */
@@ -170,6 +232,7 @@ header {
 .dish-image-container {
   padding-top: 30px;
   gap: 40px;
+  text-align: center;
 }
 
 .dish-image {
@@ -258,10 +321,22 @@ footer {
 
 @media (max-width: 770px) {
   
-  
-  .nav_items {
+   a:hover {
+   color: black;
+}
+
+  .hiddenFullSize{
+    display: flex;
+  }
+
+  .hideOnMobile {
     display: none;
   }
+
+  .menu-icon{
+     margin-bottom: 16px;
+  }
+
 
 
   .hero-container {
