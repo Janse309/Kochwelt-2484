@@ -1,6 +1,6 @@
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.classList.add('sidebar-open');
+    sidebar.classList.toggle('sidebar-open');
 }
 
 function hideSidebar() {

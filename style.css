@@ -158,7 +158,7 @@ nav a{
 
 .sidebar{
     position: fixed;
-    top: 96px;
+    top: 100px;
     right: -250px; /* Gleiche Breite wie die Sidebar, nur negativ */
     width: 250px;
     height: 100vh;
