@@ -238,6 +238,11 @@ nav a {
   flex: 1;
 }
 
+.dotd-button-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .dotd-button {
   margin-bottom: 30px;
   color: white;
@@ -246,6 +251,10 @@ nav a {
   border: 0;
   cursor: pointer;
   padding: 12px 32px;
+}
+
+.dotd-button:hover {
+  color: white;
 }
 
 .recipes-section {
