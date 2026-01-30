@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-   /* padding-left: 48px; 
+  /* padding-left: 48px; 
   padding-right: 48px;  */
   width: 100%;
 }
@@ -245,7 +245,7 @@ nav a {
 .recipes-section {
   background-color: #efefef;
   /* width: 100vw; */
-  width: 100%; 
+  width: 100%;
 }
 
 .recipes-container {
@@ -284,7 +284,7 @@ nav a {
   width: 100%;
 }
 
-.news-section-article span{
+.news-section-article span {
   flex: 1;
   text-align: center;
 }
@@ -349,14 +349,6 @@ footer {
     font-size: 20px;
   }
 
-  .hero-image {
-    aspect-ratio: 1 / 1;
-  }
-
-  .footer-socialmedia {
-    height: 50px;
-  }
-
   nav a {
     align-items: flex-start;
     justify-content: center;
@@ -378,18 +370,10 @@ footer {
     margin-bottom: 16px;
   }
 
-    .dish-image-container{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 770px) {
-
-  h1{
-    padding-bottom: 0;
-    padding-top: 30px;
+  .hero-image {
+    aspect-ratio: 1 / 1;
+    width: 400px;
+    height: 250px;
   }
 
   .hero-container {
@@ -399,12 +383,26 @@ footer {
     display: flex;
   }
 
-  .hero-container h2{
+  .hero-container h2 {
     text-align: center;
   }
 
-  .hero-image {
-    width: 300px;
+  .dish-image-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-socialmedia {
+    height: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+
+  h1 {
+    padding-bottom: 0;
+    padding-top: 30px;
   }
 
   .dish-of-the-day-description-container {
@@ -419,7 +417,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .recipes-container{
+  .recipes-container {
     flex-direction: column;
     display: flex;
   }
