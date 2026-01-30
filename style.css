@@ -388,6 +388,14 @@ footer {
     text-align: center;
   }
 
+  .dish-of-the-day-description-container{
+    align-items: center;
+  }
+
+  .dish-of-the-day-description-container a{
+    padding-top: 16px;
+  }
+
   .dish-image-container {
     flex-direction: column;
     justify-content: center;
