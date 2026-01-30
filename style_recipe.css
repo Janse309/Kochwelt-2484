@@ -3,12 +3,29 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 32px;
+  padding: 0 48px;
+}
+
+h1{
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+h2{
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+h3{
+  padding: 0 48px;
 }
 
 .generally-recipe-information-container {
   margin-bottom: 32px;
   gap: 20px;
   display: flex;
+  padding-left: 48px;
+  padding-left: 48px;
 }
 
 .generally-recipe-information-item {
@@ -26,7 +43,7 @@
 
 .ingredients-calculation-container {
   border-top: 1px solid #efefef;
-  padding: 8px 0;
+  padding: 8px 48px;
   align-items: center;
 }
 
@@ -40,6 +57,7 @@ input {
 
 table {
   margin-bottom: 32px;
+  padding: 0 48px;
 }
 
 tr:nth-child(odd) {
@@ -51,10 +69,16 @@ td {
   padding: 16px 24px;
 }
 
+.preparation-text{
+  padding: 0 48px;
+}
+
 .recipe-responsible {
   align-items: center;
   gap: 30px;
   margin-bottom: 32px;
+  display: flex;
+  padding: 0 48px;
 }
 
 .profile-picture {
