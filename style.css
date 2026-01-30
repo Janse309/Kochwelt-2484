@@ -240,6 +240,12 @@ nav a {
 
 .dotd-button {
   margin-bottom: 30px;
+  color: white;
+  background-color: #008000;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  padding: 12px 32px;
 }
 
 .recipes-section {
