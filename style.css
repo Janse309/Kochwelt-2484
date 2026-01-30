@@ -327,9 +327,13 @@ footer {
   margin-right: 48px;
 }
 
+.socialmedia-container {
+  display: flex;
+  gap: 20px;
+}
+
 .footer-socialmedia {
   height: 60px;
-  margin-left: 20px;
 }
 
 @media (max-width: 1150px) {
@@ -465,10 +469,15 @@ footer {
 
   .footer-socialmedia {
     height: 35px;
-    margin-left: 10px;
   }
 
   .header-footer-logo {
     height: 50px;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer-container {
+    flex-direction: column;
   }
 }
