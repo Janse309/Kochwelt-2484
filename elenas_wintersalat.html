@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_recipe.css">
     <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css">
-
+    <script src="./nav-bar.js"></script>
+    <script src="./spagetthi_script.js" defer></script>
 </head>
 
 <body>
@@ -23,13 +24,43 @@
                 />
             </a>
 
-            <nav class="nav_items">
-                <a href="index.html">Start</a>
-                <a href="rezept-des-tages.html">Rezept des Tages</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="impressum.html">Impressum</a>
-            </nav>
+            <nav class="content-nav">
+                <ul class="nav_items menu-icon">
+                    <li class="hideOnMobile">
+                        <a href="index.html">Start</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="rezept-des-tages.html">Rezept des Tages</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="impressum.html">Impressum</a>
+                    </li>
+                    <li class="hiddenFullSize" onclick="showSidebar()">
+                        <img 
+                            src="./img/menu-icon.svg" 
+                            alt="Menu Button">
+                    </li>
+                </ul>
 
+                <ul class="sidebar">
+                    <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+                    <li>
+                        <a href="index.html">Start</a>
+                    </li>
+                    <li>
+                        <a href="rezept-des-tages.html">Rezept des Tages</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="impressum.html">Impressum</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -74,39 +105,33 @@
 
             <div class="ingredients-calculation-container">
                 Zutaten für
-                <input type="number">
-                <button>Portionen</button>
+                <input type="number" id="portion-input" value="4" min="1">
+                <button onclick="calculatePortions()">Portionen</button>
             </div>
-            <table>
+            <table id="ingredients-table">
                 <tr>
-                    <td>Chinakohl</td>
+                    <td data-base="1" data-unit="">1 Chinakohl</td>
                 </tr>
                 <tr>
-                    <td>Orange</td>
+                    <td data-base="2" data-unit="">2 Orangen</td>
                 </tr>
                 <tr>
-                    <td>Birne</td>
+                    <td data-base="2" data-unit="">2 Birnen</td>
                 </tr>
                 <tr>
-                    <td>Apfel</td>
+                    <td data-base="1" data-unit="">1 Apfel</td>
                 </tr>
                 <tr>
-                    <td>Nüsse (z.B. Walnüsse)</td>
+                    <td data-base="4" data-unit="EL">4 EL Joghurt</td>    
                 </tr>
                 <tr>
-                    <td>Zitrone</td>
+                    <td data-base="2" data-unit="EL">2 EL Orangensaft</td>
                 </tr>
                 <tr>
-                    <td>Orangensaft</td>
+                    <td data-base="1" data-unit="">Currypulver, Salz und Pfeffer</td>
                 </tr>
                 <tr>
-                    <td>Joghurt</td>
-                </tr>
-                <tr>
-                    <td>Salz und Pfeffer</td>
-                </tr>
-                <tr>
-                    <td>Currypulver</td>
+                    <td data-base="1" data-unit="">Nüsse (z.B. Walnüsse)</td>
                 </tr>
 
             </table>
@@ -132,7 +157,14 @@
                     Gesamtzeit ca. 45 Minuten
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus adipisci voluptatum. Eaque a omnis incidunt accusamus voluptate ex, doloremque beatae voluptas placeat sed ut ratione expedita, veniam quo tempore!</p>
+            <p>
+                In einer großen Schüssel Joghurt, Orangensaft und Gewürze verrühren.<br>
+                Danach den Chinakohl in dünne Streifen schneiden, waschen, hinzugeben und verühren.<br>
+                Im Anschluss das gewaschene Obst klein schneiden und ebenfalls mit dem Salat vermischen.<br>
+                Den Salat 30 Minuten im Kühlschrank ziehen lassen.<br>
+                Vor dem Servieren nochmals abschmecken und mit gehackten Nüssen garnieren.<br>
+                Guten Appetit!
+            </p> 
         </section>
 
         <section>
