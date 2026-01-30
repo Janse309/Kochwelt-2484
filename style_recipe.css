@@ -3,7 +3,8 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 32px;
-  padding: 0 48px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 h1{
@@ -17,7 +18,8 @@ h2{
 }
 
 h3{
-  padding: 0 48px;
+  margin-left: 48px;
+  margin-left: 48px;
 }
 
 .generally-recipe-information-container {
