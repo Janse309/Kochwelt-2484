@@ -12,25 +12,31 @@
 
   <body>
     <header class="full-width">
-        <div class="content-limitation header-container">
+    <div class="content-limitation header-container">
 
-            <a href="index.html">
-                <img 
-                    class="header-footer-logo" 
-                    src="./img/logo.png" 
-                    alt="Kochwelt Logo"
-                />
-            </a>
+      <a href="index.html">
+        <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
+      </a>
 
-            <nav class="nav_items">
-                <a target="_blank" href="index.html">Start</a>
-                <a target="_blank" href="rezept-des-tages.html">Rezept des Tages</a>
-                <a target="_blank" href="/kontakt.html">Kontakt</a>
-                <a target="_blank" href="">Impressum</a>
-            </nav>
+      <nav class="content-nav">
+        <ul class="nav_items menu-icon">
+          <li class="hideOnMobile"><a href="index.html">Start</a></li>
+          <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+          <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+          <li class="hiddenFullSize" onclick="showSidebar()"><img src="./img/menu-icon.svg" alt="Menu Button"></li>
+        </ul>
 
-        </div>
-    </header>
+        <ul class="sidebar">
+          <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main class="content-limitation">
         <h1>Datenschutz&shy;erkl&auml;rung</h1>

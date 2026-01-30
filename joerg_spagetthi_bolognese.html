@@ -11,28 +11,36 @@
     <!-- <link rel="stylesheet" href="spagetthi_style.css"> -->
     <script src="./spagetthi_script.js" defer></script>
     <link rel="stylesheet" href="./style_recipe.css">
+    <script src="nav-bar.js"></script>
 
 </head>
 
 <body>
-       <header class="full-width">
+    <header class="full-width">
         <div class="content-limitation header-container">
 
             <a href="index.html">
-                <img 
-                    class="header-footer-logo" 
-                    src="./img/logo.png" 
-                    alt="Kochwelt Logo"
-                />
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
             </a>
 
-            <nav class="nav_items">
-                <a target="_self" href="index.html">Start</a>
-                <a target="_self" href="gericht-des-tages.html">Rezept des Tages</a>
-                <a target="_self" href="kontakt.html">Kontakt</a>
-                <a target="_self" href="">Impressum</a>
-            </nav>
+            <nav class="content-nav">
+                <ul class="nav_items menu-icon">
+                    <li class="hideOnMobile"><a href="index.html">Start</a></li>
+                    <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+                    <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+                    <li class="hiddenFullSize" onclick="showSidebar()"><img src="./img/menu-icon.svg" alt="Menu Button">
+                    </li>
+                </ul>
 
+                <ul class="sidebar">
+                    <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -130,37 +138,21 @@
         </section>
     </main>
 
- <footer class="full-width">
+    <footer class="full-width">
         <div class="content-limitation footer-container">
             <a href="index.html">
-                <img 
-                    class="header-footer-logo" 
-                    src="./img/logo_kochwelt_ weiss.png"
-                    alt="Kochwelt Logo"
-                />
+                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
             </a>
 
             <div aria-label="Social Media Links">
                 <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
-                    <img 
-                        class="footer-socialmedia" 
-                        src="./img/facebook.png"
-                        alt="facebook"
-                    />
+                    <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
                 </a>
                 <a target="_blank" href="https://www.instagram.com/">
-                    <img 
-                        class="footer-socialmedia" 
-                        src="./img/insta.png"
-                        alt="instagram"
-                    />
+                    <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
                 </a>
                 <a target="_blank" href="https://x.com/?lang=de">
-                    <img 
-                        class="footer-socialmedia" 
-                        src="./img/twitter.png"
-                        alt="twitter"
-                    />
+                    <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
                 </a>
             </div>
         </div>
