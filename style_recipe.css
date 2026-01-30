@@ -63,10 +63,16 @@ td {
 }
 
 .profile-picture-jan {
-    width: 70px;
-    height: 80px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+  width: 70px;
+  height: 80px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+.profile-picture-kevin {
+  width: 70px;
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
 
 .name {
