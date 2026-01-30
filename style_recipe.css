@@ -8,6 +8,7 @@
 .generally-recipe-information-container {
   margin-bottom: 32px;
   gap: 20px;
+  display: flex;
 }
 
 .generally-recipe-information-item {
