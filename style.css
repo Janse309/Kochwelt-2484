@@ -99,7 +99,7 @@ a:hover {
   color: #008000;
 }
 
-ul{
+ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -127,7 +127,7 @@ header {
   height: 80px;
 }
 
-nav ul{
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -135,15 +135,15 @@ nav ul{
   align-items: center;
 }
 
-nav li{
+nav li {
   height: 50px;
 }
 
-nav a{
+nav a {
   height: 100%;
   text-decoration: none;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .nav_items {
@@ -152,45 +152,47 @@ nav a{
   margin-bottom: 8px;
 }
 
-.content-nav{
+.content-nav {
   position: relative;
 }
 
-.sidebar{
-    position: fixed;
-    top: 96px;
-    right: -250px; /* Gleiche Breite wie die Sidebar, nur negativ */
-    width: 250px;
-    height: 100vh;
-    background-color: #efefef;
-    z-index: 1000;
-    transition: right 0.5s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 20px;
-    margin: 0;
-    padding-left: 20px;
+.sidebar {
+  position: fixed;
+  top: 100px;
+  right: -250px;
+  /* Gleiche Breite wie die Sidebar, nur negativ */
+  width: 250px;
+  height: 232px;
+  background-color: #efefef;
+  z-index: 1000;
+  transition: right 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 16px;
+  margin: 0;
+
 }
 
 .sidebar-open {
-    right: 0;
+  right: 0;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
   background-color: rgb(150, 150, 150);
 }
 
-.sidebar li{
+.sidebar li {
   width: 100%;
 }
 
-.sidebar a{
+.sidebar a {
   width: 100%;
 }
 
-.hiddenFullSize{
+.hiddenFullSize {
   display: none;
   height: 24px;
   cursor: pointer;
@@ -290,7 +292,7 @@ footer {
     padding-left: 32px;
     padding-right: 32px;
   }
-  
+
   .hero-image {
     height: 225px;
   }
@@ -305,7 +307,7 @@ footer {
     padding-left: 16px;
     padding-right: 16px;
   }
-  
+
   .header-footer-logo {
     height: 60px;
   }
@@ -328,11 +330,11 @@ footer {
 }
 
 @media (max-width: 770px) {
-   a:hover {
-   color: black;
-}
+  a:hover {
+    color: black;
+  }
 
-  .hiddenFullSize{
+  .hiddenFullSize {
     display: flex;
   }
 
@@ -340,8 +342,8 @@ footer {
     display: none;
   }
 
-  .menu-icon{
-     margin-bottom: 16px;
+  .menu-icon {
+    margin-bottom: 16px;
   }
 
 
@@ -399,3 +401,4 @@ footer {
     height: 50px;
   }
 }
+
