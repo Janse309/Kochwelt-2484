@@ -1,6 +1,5 @@
 .headline-picture {
   height: 300px;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 32px;
   margin-left: 48px;
@@ -18,15 +17,15 @@ h2{
 }
 
 h3{
-  margin-left: 48px;
-  margin-left: 48px;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .generally-recipe-information-container {
   margin-bottom: 32px;
   gap: 20px;
   display: flex;
-  padding-left: 48px;
+  padding-right: 48px;
   padding-left: 48px;
 }
 
@@ -44,6 +43,7 @@ h3{
 }
 
 .ingredients-calculation-container {
+  display: flex;
   border-top: 1px solid #efefef;
   padding: 8px 48px;
   align-items: center;
@@ -104,4 +104,37 @@ td {
 
 .name {
   font-size: 24px;
+}
+
+@media (max-width: 1150px) {
+
+  .headline-picture {
+  height: 200px;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .headline-picture {
+    height: 150px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .generally-recipe-information-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ingredients-calculation-container {
+    justify-content: center;
+  }
+
+  .recipe-responsible {
+    justify-content: center;
+  }
+
 }

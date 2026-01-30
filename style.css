@@ -42,6 +42,12 @@ section {
   flex-direction: column;
 }
 
+.section-padding {
+  padding-bottom: 90px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 /* div {
   display: flex;
 } */
@@ -180,7 +186,6 @@ nav a {
   padding-top: 16px;
   padding-left: 16px;
   margin: 0;
-
 }
 
 .sidebar-open {
@@ -219,8 +224,8 @@ nav a {
 .hero-container {
   display: flex;
   gap: 40px;
-  padding-left: 48px;
-  padding-right: 48px;
+  /* padding-left: 48px; 
+  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
 }
 
 .hero-image {
@@ -268,8 +273,8 @@ nav a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-right: 48px;
-  padding-left: 48px;
+  /* padding-left: 48px; 
+  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
   text-align: center;
 }
 
@@ -288,8 +293,8 @@ nav a {
 
 .news-section {
   align-items: center;
-  padding-left: 48px;
-  padding-right: 48px;
+  /* padding-left: 48px; 
+  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
 }
 
 .news-section-article {
@@ -303,11 +308,6 @@ nav a {
 .news-section-article span {
   flex: 1;
   text-align: center;
-}
-
-.section-padding-top-bottom {
-  padding-top: 40px;
-  padding-bottom: 90px;
 }
 
 footer {
@@ -359,12 +359,15 @@ footer {
 
   h1 {
     font-size: 40px;
-    padding-bottom: 0;
     padding-top: 30px;
   }
 
   h2 {
     font-size: 20px;
+  }
+
+  span {
+    text-align: center;
   }
 
   nav a {
@@ -434,13 +437,32 @@ footer {
     height: 50px;
   } 
   
-  .section-padding-top-bottom {
-    padding-top: 24px;
+  .section-padding {
     padding-bottom: 40px;
   }
 }
 
 @media (max-width: 530px) {
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .hero-image {
+    height: 150px;
+  }
+
+  .dish-image {
+    height: 100px;
+  }
+
   .footer-socialmedia {
     height: 35px;
     margin-left: 10px;
