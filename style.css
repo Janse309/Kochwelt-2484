@@ -13,12 +13,13 @@ html {
   margin: 0 auto;
 }
 
-.full-width {
-  width: calc(100% + 96px);
-  /* Padding aus Body wieder kompensieren */
-  margin-left: -48px;
-  margin-right: -48px;
-}
+/* .full-width {
+   width: calc(100% + 96px); 
+  /Padding aus Body wieder kompensieren 
+   margin-left: -48px; 
+   margin-right: -48px; 
+   width: 100%; 
+ } */
 
 body {
   font-family: "Raleway", sans-serif;
@@ -27,8 +28,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  padding-left: 48px;
-  padding-right: 48px;
+   /* padding-left: 48px; 
+  padding-right: 48px;  */
+  width: 100%;
 }
 
 main {
@@ -40,9 +42,9 @@ section {
   flex-direction: column;
 }
 
-div {
+/* div {
   display: flex;
-}
+} */
 
 button {
   color: white;
@@ -62,12 +64,16 @@ h1 {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 24px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h2 {
   font-size: 30px;
   margin: 0;
   padding-bottom: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h3 {
@@ -116,6 +122,7 @@ header {
 }
 
 .header-container {
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   flex: 1;
@@ -162,7 +169,7 @@ nav a {
   right: -250px;
   /* Gleiche Breite wie die Sidebar, nur negativ */
   width: 250px;
-  height: 232px;
+  height: 200px;
   background-color: #efefef;
   z-index: 1000;
   transition: right 0.5s ease-in-out;
@@ -202,12 +209,18 @@ nav a {
 /* hier break */
 
 .hero-section {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero-container {
-  gap: 24px;
+  display: flex;
+  gap: 40px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .hero-image {
@@ -232,17 +245,23 @@ nav a {
 .recipes-section {
   background-color: #efefef;
   /* width: 100vw; */
+  width: 100%; 
 }
 
 .recipes-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .dish-image-container {
+  display: flex;
   padding-top: 30px;
-  gap: 40px;
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .dish-image {
@@ -253,12 +272,21 @@ nav a {
 
 .news-section {
   align-items: center;
-  gap: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .news-section-article {
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
+  width: 100%;
+}
+
+.news-section-article span{
+  flex: 1;
+  text-align: center;
 }
 
 .section-padding-top-bottom {
@@ -275,6 +303,7 @@ footer {
 }
 
 .footer-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1;
@@ -288,13 +317,13 @@ footer {
 }
 
 @media (max-width: 1150px) {
-  body {
+  /* body {
     padding-left: 32px;
     padding-right: 32px;
-  }
+  } */
 
   .hero-image {
-    height: 225px;
+    height: 200px;
   }
 
   .dish-image {
@@ -303,10 +332,10 @@ footer {
 }
 
 @media (max-width: 850px) {
-  body {
+  /* body {
     padding-left: 16px;
     padding-right: 16px;
-  }
+  } */
 
   .header-footer-logo {
     height: 60px;
@@ -327,9 +356,12 @@ footer {
   .footer-socialmedia {
     height: 50px;
   }
-}
 
-@media (max-width: 770px) {
+  nav a {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
   a:hover {
     color: black;
   }
@@ -346,21 +378,50 @@ footer {
     margin-bottom: 16px;
   }
 
+    .dish-image-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
+@media (max-width: 770px) {
+
+  h1{
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
 
   .hero-container {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
-    margin-bottom: 24px;
+    display: flex;
   }
 
-  .dotd-h2-responsive {
+  .hero-container h2{
     text-align: center;
+  }
+
+  .hero-image {
+    width: 300px;
+  }
+
+  .dish-of-the-day-description-container {
+    align-items: center;
+  }
+
+  .dotd-description {
+    margin-bottom: 16px;
   }
 
   .dotd-button {
     margin-bottom: 0;
+  }
+
+  .recipes-container{
+    flex-direction: column;
+    display: flex;
   }
 
   .section-padding-top-bottom {
@@ -368,11 +429,7 @@ footer {
     padding-bottom: 40px;
   }
 
-  .dish-image-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
+
 
   .news-section {
     gap: 0;
@@ -401,4 +458,3 @@ footer {
     height: 50px;
   }
 }
-
