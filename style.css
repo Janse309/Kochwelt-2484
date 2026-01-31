@@ -293,8 +293,6 @@ nav a {
 
 .news-section {
   align-items: center;
-  /* padding-left: 48px; 
-  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
 }
 
 .news-section-article {
@@ -318,6 +316,14 @@ footer {
   align-items: center;
 }
 
+.displayMobile{
+  display: none;
+}
+
+.displayMobile img{
+  filter: invert(1);
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -325,6 +331,7 @@ footer {
   flex: 1;
   margin-left: 48px;
   margin-right: 48px;
+  width: 100%;
 }
 
 .socialmedia-container {
@@ -337,10 +344,6 @@ footer {
 }
 
 @media (max-width: 1150px) {
-  /* body {
-    padding-left: 32px;
-    padding-right: 32px;
-  } */
 
   .hero-image {
     height: 200px;
@@ -352,10 +355,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-  /* body {
-    padding-left: 16px;
-    padding-right: 16px;
-  } */
 
   .header-footer-logo {
     height: 60px;
@@ -428,7 +427,8 @@ footer {
   }
 
   .dish-image {
-    aspect-ratio: 2 / 1;
+    width: 350px;
+    height: 200px;
   }
 
   .news-section-article {
@@ -449,10 +449,8 @@ footer {
 @media (max-width: 530px) {
 
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
-    padding-left: 48px;
-    padding-right: 48px;
   }
 
   h2 {
@@ -460,11 +458,13 @@ footer {
   }
 
   .hero-image {
-    height: 150px;
+    height: 200px;
+    width: 300px;
   }
 
   .dish-image {
-    height: 100px;
+    height: 200px;
+    width: 250px;
   }
 
   .footer-socialmedia {
@@ -476,8 +476,42 @@ footer {
   }
 }
 
-@media (max-width: 440px) {
-  .footer-container {
-    flex-direction: column;
+@media (max-width: 400px) {
+
+  h1{
+    font-size: 20px;
   }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .hero-image{
+    width: 250px;
+  }
+
+ .hideOnHandy{
+  display: none;
+ }
+
+ .displayMobile{
+  display: flex;
+ }
+
+ .socialmedia-container{
+  gap: 8px;
+  justify-content: space-between;
+  display: flex;
+ }
 }
+ @media(max-width:250px){
+  .hero-image{
+    height: 150px;
+    width: 200px;
+  }
+
+  .dish-image{
+    width: 150px;
+    height: 150px;
+  }
+ }
