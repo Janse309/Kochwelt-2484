@@ -9,12 +9,24 @@ const ingredients = [
 ];
 
 function calculateAmount() {
-  let portionSize = Number(document.getElementById("input-amount").value);
-  if (portionSize >= 1 && portionSize <= 20) {
-    ingredients.forEach((s) => {
-      let value = s.base * portionSize;
-      if (s.comma) value = value.toString().replace(".", ",");
-      document.getElementById(s.id).textContent = value;
-    });
+  const input = document.getElementById("input-amount");
+  const hint = document.getElementById("input-hint"); // optional
+  const portionSize = Number(input.value);
+
+  // Validierung: 1 bis 20, ganze Zahlen
+  if (!Number.isInteger(portionSize) || portionSize < 1 || portionSize > 20) {
+    input.setCustomValidity("Bitte gib eine Zahl von 1 bis 20 ein.");
+    input.reportValidity(); // zeigt den Hinweis direkt im Browser
+    if (hint) hint.textContent = "Bitte gib eine Zahl von 1 bis 20 ein.";
+    return;
   }
+
+  input.setCustomValidity("");
+  if (hint) hint.textContent = "";
+
+  ingredients.forEach((item) => {
+    const el = document.getElementById(item.id);
+    if (!el) return;
+    el.textContent = item.base * portionSize;
+  });
 }
