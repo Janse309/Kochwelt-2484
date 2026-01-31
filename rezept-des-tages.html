@@ -15,31 +15,38 @@
 
   <body>
     <header class="full-width">
-    <div class="content-limitation header-container">
+      <div class="content-limitation header-container">
+        <a href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
 
-      <a href="index.html">
-        <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
-      </a>
+        <nav class="content-nav">
+          <ul class="nav_items menu-icon">
+            <li class="hideOnMobile"><a href="index.html">Start</a></li>
+            <li class="hideOnMobile">
+              <a href="rezept-des-tages.html">Rezept des Tages</a>
+            </li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+            <li class="hiddenFullSize" onclick="showSidebar()">
+              <img src="./img/menu-icon.svg" alt="Menu Button" />
+            </li>
+          </ul>
 
-      <nav class="content-nav">
-        <ul class="nav_items menu-icon">
-          <li class="hideOnMobile"><a href="index.html">Start</a></li>
-          <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
-          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
-          <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
-          <li class="hiddenFullSize" onclick="showSidebar()"><img src="./img/menu-icon.svg" alt="Menu Button"></li>
-        </ul>
-
-        <ul class="sidebar">
-          <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
-          <li><a href="index.html">Start</a></li>
-          <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <ul class="sidebar">
+            <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+            <li><a href="index.html">Start</a></li>
+            <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="content-limitation">
       <section>
@@ -67,7 +74,7 @@
 
           <div class="ingredients-calculation-container">
             Zutaten für
-            <input type="number" value="1" min="1" max="15" id="input-amount" />
+            <input type="number" value="1" min="1" max="20" id="input-amount" />
             <button onclick="calculateAmount()">Portionen</button>
           </div>
           <table>
@@ -133,27 +140,47 @@
     </main>
 
     <footer class="full-width">
-    <div class="content-limitation footer-container">
-      <a class="hideOnHandy" href="index.html">
-        <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
-      </a>
+      <div class="content-limitation footer-container">
+        <a class="hideOnHandy" href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo_kochwelt_ weiss.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
 
-      <a class="displayMobile" href="index.html">
-        <img class="header-footer-logo" src="./img/logo_small.png" alt="Kochwelt Logo">
-      </a>
+        <a class="displayMobile" href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo_small.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
 
-      <div aria-label="Social Media Links" class="socialmedia-container">
-        <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
-          <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
-        </a>
-        <a target="_blank" href="https://www.instagram.com/">
-          <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
-        </a>
-        <a target="_blank" href="https://x.com/?lang=de">
-          <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
-        </a>
+        <div aria-label="Social Media Links" class="socialmedia-container">
+          <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+            <img
+              class="footer-socialmedia"
+              src="./img/facebook.png"
+              alt="facebook"
+            />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <img
+              class="footer-socialmedia"
+              src="./img/insta.png"
+              alt="instagram"
+            />
+          </a>
+          <a target="_blank" href="https://x.com/?lang=de">
+            <img
+              class="footer-socialmedia"
+              src="./img/twitter.png"
+              alt="twitter"
+            />
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
