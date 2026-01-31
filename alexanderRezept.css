@@ -27,6 +27,7 @@
 a:hover{
     color: green;
     text-decoration-color: green;
+    text-decoration: underline;
 }
 
 .padding_top_container{
@@ -208,4 +209,5 @@ a:hover{
     width: auto;
     
 }
+
 
