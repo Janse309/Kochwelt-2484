@@ -502,20 +502,21 @@ footer {
     display: flex;
   }
 
-  .section-padding {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
   /* Impressum */
 
-  .section-padding {
+  .section-padding{
     padding-left: 0;
     padding-right: 0;
   }
 
-  .section-padding p {
+  .section-padding p{
     text-align: center;
+  }
+
+  .Datenschutz-400px {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
   }
 
 }
@@ -529,10 +530,5 @@ footer {
   .dish-image {
     width: 150px;
     height: 150px;
-  }
-
-    .section-padding {
-    margin-left: 8px;
-    margin-right: 8px;
   }
 }
