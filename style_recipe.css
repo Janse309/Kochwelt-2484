@@ -21,6 +21,10 @@ h3 {
   padding-left: 48px;
 }
 
+input{
+  text-align: center;
+}
+
 .generally-recipe-information-container {
   margin-bottom: 32px;
   gap: 20px;
@@ -165,7 +169,7 @@ td {
 
   input {
     margin-left: 0;
-    text-align: center;
+    
   }
 
   table {
