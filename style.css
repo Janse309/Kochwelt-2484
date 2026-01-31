@@ -501,6 +501,18 @@ footer {
     justify-content: space-between;
     display: flex;
   }
+
+  /* Impressum */
+
+  .section-padding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-padding p{
+    text-align: center;
+  }
+
 }
 
 @media(max-width:250px) {
