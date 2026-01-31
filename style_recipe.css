@@ -6,17 +6,17 @@
   margin-right: 48px;
 }
 
-h1{
+h1 {
   padding-right: 48px;
   padding-left: 48px;
 }
 
-h2{
+h2 {
   padding-right: 48px;
   padding-left: 48px;
 }
 
-h3{
+h3 {
   padding-right: 48px;
   padding-left: 48px;
 }
@@ -71,7 +71,7 @@ td {
   padding: 16px 24px;
 }
 
-.preparation-text{
+.preparation-text {
   padding: 0 48px;
 }
 
@@ -95,6 +95,7 @@ td {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
+
 .profile-picture-kevin {
   width: 70px;
   height: 90px;
@@ -109,7 +110,7 @@ td {
 @media (max-width: 1150px) {
 
   .headline-picture {
-  height: 200px;
+    height: 200px;
   }
 
 }
@@ -138,3 +139,38 @@ td {
   }
 
 }
+
+@media(max-width: 400px) {
+
+  .generally-recipe-information-container {
+    padding-right: 0;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ingredients-calculation-container {
+    padding: 8px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  input{
+    margin-left: 0;
+  }
+
+  table{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+}
+
