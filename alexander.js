@@ -2,6 +2,7 @@ const eingabe = document.getElementById('eingabe')
 const mengen = document.querySelectorAll('.menge')
 const button = document.getElementById('berechnen')
 
+
 button.addEventListener('click',function(){
     const portion = eingabe.value;
 
@@ -9,8 +10,8 @@ button.addEventListener('click',function(){
        const basis =  element.getAttribute('data-basis');
        const wert = portion * basis;
        element.innerText = wert;
-
+        
     });
-
+    
 })
 
