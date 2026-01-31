@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt - Alexanders Conchiglioni</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_recipe.css" />
+    <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
+    <script src="nav-bar.js"></script>
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
+    <script src="alexander.js"></script>
+  </head>
+
+  <body>
+    <header class="full-width">
+      <div class="content-limitation header-container">
+        <a href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
+
+        <nav class="content-nav">
+          <ul class="nav_items menu-icon">
+            <li class="hideOnMobile"><a href="index.html">Start</a></li>
+            <li class="hideOnMobile">
+              <a href="rezept-des-tages.html">Rezept des Tages</a>
+            </li>
+            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+            <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+            <li class="hiddenFullSize" onclick="showSidebar()">
+              <img src="./img/menu-icon.svg" alt="Menu Button" />
+            </li>
+          </ul>
+
+          <ul class="sidebar">
+            <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+            <li><a href="index.html">Start</a></li>
+            <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content-limitation">
+      <section>
+        <h1 class="h1_recipe-title">Alexanders Conchiglioni</h1>
+
+        <img
+          class="headline-picture"
+          src="./img/conchiglioni-ripieni-gorgonzola-e-funghi.jpg"
+          alt=""
+        />
+
+        <div class="generally-recipe-information-container">
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
+            40 Min.
+          </div>
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/brain-solid.svg" alt="" />
+            SIMPEL
+          </div>
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/calendar-alt-regular.svg" alt="" />
+            22.01.2026
+          </div>
+        </div>
+
+        <section>
+          <h2>Zutaten</h2>
+
+          <div class="ingredients-calculation-container">
+            Zutaten für
+            <input type="number" value="1" min="1" max="15" id="input-amount" />
+            <button onclick="calculateAmount()">Portionen</button>
+          </div>
+          <table>
+            <tr>
+              <td><span id="mehl">40</span> g Mehl</td>
+            </tr>
+            <tr>
+              <td><span id="conchiglioni">500</span> g Conchiglioni</td>
+            </tr>
+            <tr>
+              <td><span id="knobli">1</span> rote Knoblauchzehe</td>
+            </tr>
+            <tr>
+              <td><span id="butter">10</span> g Butter + Butter f. d. Form</td>
+            </tr>
+            <tr>
+              <td><span id="milch">500</span> ml Milch</td>
+            </tr>
+            <tr>
+              <td><span id="muskat">1</span> Prise Muskat</td>
+            </tr>
+            <tr>
+              <td><span id="gorgonzola">150</span> g Gorgonzola</td>
+            </tr>
+            <tr>
+              <td><span id="champignons">200</span> g Champignons</td>
+            </tr>
+            <tr>
+              <td>
+                <span id="gewuerze">40</span> g ( Parmesan, Salz, Pfeffer)
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+
+      <section>
+        <h2>Zubereitung</h2>
+        <div class="generally-recipe-information-container">
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
+            Vorbereitung ca. 10 Min
+          </div>
+          <div class="generally-recipe-information-item">
+            <img class="icon" src="./img/clock-regular.svg" alt="" />
+            Gesamtzeit ca. 50 Min
+          </div>
+        </div>
+        <p class="preparation-text">
+          Die Conchiglioni in Salzwasser al dente kochen und abseihen. Den
+          Knoblauch schälen und fein hacken. Die Butter in einem Topf schmelzen
+          und den Knoblauch darin anschwitzen. Dann das Mehl dazurühren, bis es
+          eine hellbraune Farbe hat. Langsam die Milch dazugießen. Weiterrühren
+          bis eine glatte Sauce entsteht. Mit Salz, Pfeffer und Muskat nach
+          Belieben würzen. Inzwischen den Backofen auf 180° C Ober-/Unterhitze
+          vorheizen. Eine Auflaufform einfetten und mit den Conchiglioni
+          befüllen. Den in Stücke geschnittenen Gorgonzola, die geschnittenen
+          Champignons und die Bechamelsauce vermischen und über die Conchiglioni
+          verteilen. Den geriebenen Parmesan darüberstreuen und ca. 25 - 30 Min.
+          goldbraun überbacken.
+        </p>
+      </section>
+      <section>
+        <h3 class="h3-padding-top">Rezept erstellt von</h3>
+        <div class="recipe-responsible">
+          <img
+            class="profile-picture-alexander"
+            src="./img/alexanders_avatar.png"
+            alt=""
+          />
+          <span class="name">Alexander</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="full-width">
+      <div class="content-limitation footer-container">
+        <a class="hideOnHandy" href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo_kochwelt_ weiss.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
+
+        <a class="displayMobile" href="index.html">
+          <img
+            class="header-footer-logo"
+            src="./img/logo_small.png"
+            alt="Kochwelt Logo"
+          />
+        </a>
+
+        <div aria-label="Social Media Links" class="socialmedia-container">
+          <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+            <img
+              class="footer-socialmedia"
+              src="./img/facebook.png"
+              alt="facebook"
+            />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <img
+              class="footer-socialmedia"
+              src="./img/insta.png"
+              alt="instagram"
+            />
+          </a>
+          <a target="_blank" href="https://x.com/?lang=de">
+            <img
+              class="footer-socialmedia"
+              src="./img/twitter.png"
+              alt="twitter"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

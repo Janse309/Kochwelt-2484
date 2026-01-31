@@ -102,21 +102,24 @@ td {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
+.profile-picture-alexander {
+  width: 70px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
 
 .name {
   font-size: 24px;
 }
 
 @media (max-width: 1150px) {
-
   .headline-picture {
     height: 200px;
   }
-
 }
 
 @media (max-width: 530px) {
-
   .headline-picture {
     height: 150px;
   }
@@ -137,11 +140,9 @@ td {
   .recipe-responsible {
     justify-content: center;
   }
-
 }
 
-@media(max-width: 400px) {
-
+@media (max-width: 400px) {
   .generally-recipe-information-container {
     padding-right: 0;
     padding-left: 0;
@@ -162,15 +163,13 @@ td {
     gap: 8px;
   }
 
-  input{
+  input {
     margin-left: 0;
   }
 
-  table{
+  table {
     width: 100%;
     padding: 0;
     text-align: center;
   }
-
 }
-

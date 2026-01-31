@@ -6,7 +6,7 @@
     <title>Kochwelt – Datenschutzerklärung</title>
     <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./cookie.css" />
+    <link rel="stylesheet" href="./style_schutz.css" />
     <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
     <script src="nav-bar.js" defer></script>
     <script src="daten.js" defer></script>
@@ -340,7 +340,7 @@
         <li>
           Facebook:
           <a
-            href="https://de-de.facebook.com/privacy/explanation"
+            href="https://de-de.facebook.com/privacy/explanation" style="word-break: break-all;"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -350,7 +350,7 @@
         <li>
           Instagram:
           <a
-            href="https://privacycenter.instagram.com/policy/"
+            href="https://privacycenter.instagram.com/policy/" style="word-break: break-all;"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -360,7 +360,7 @@
         <li>
           X (Twitter):
           <a
-            href="https://x.com/de/privacy"
+            href="https://x.com/de/privacy" style="word-break: break-all;"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -383,7 +383,7 @@
       <p>
         Weitere Informationen zu Google Fonts finden Sie unter
         <a
-          href="https://developers.google.com/fonts/faq"
+          href="https://developers.google.com/fonts/faq" style="word-break: break-all;"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -391,7 +391,7 @@
         </a>
         und in der Datenschutzerkl&auml;rung von Google:
         <a
-          href="https://policies.google.com/privacy?hl=de"
+          href="https://policies.google.com/privacy?hl=de" style="word-break: break-all;"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -404,7 +404,7 @@
 
     <footer class="full-width">
       <div class="content-limitation footer-container">
-        <a class="hideOnHandy" href="index.html">
+        <a href="index.html" aria-label="Zur Startseite">
           <img
             class="header-footer-logo"
             src="./img/logo_kochwelt_ weiss.png"
@@ -412,34 +412,38 @@
           />
         </a>
 
-        <a class="displayMobile" href="index.html">
-          <img
-            class="header-footer-logo"
-            src="./img/logo_small.png"
-            alt="Kochwelt Logo"
-          />
-        </a>
-
         <div aria-label="Social Media Links" class="socialmedia-container">
-          <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/?locale=de_DE" 
+            aria-label="Facebook (externer Link)"
+          >
             <img
               class="footer-socialmedia"
               src="./img/facebook.png"
-              alt="facebook"
+              alt="Facebook"
             />
           </a>
-          <a target="_blank" href="https://www.instagram.com/">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/"
+            aria-label="Instagram (externer Link)"
+          >
             <img
               class="footer-socialmedia"
               src="./img/insta.png"
-              alt="instagram"
+              alt="Instagram"
             />
           </a>
-          <a target="_blank" href="https://x.com/?lang=de">
+          <a
+            target="_blank"
+            href="https://x.com/?lang=de"
+            aria-label="X / Twitter (externer Link)"
+          >
             <img
               class="footer-socialmedia"
               src="./img/twitter.png"
-              alt="twitter"
+              alt="X / Twitter"
             />
           </a>
         </div>
