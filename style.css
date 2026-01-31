@@ -304,6 +304,7 @@ nav a {
 .news-section-article span {
   flex: 1;
   text-align: center;
+  padding: 8px;
 }
 
 footer {
@@ -411,6 +412,7 @@ footer {
 
   .dotd-description {
     margin-bottom: 16px;
+    padding: 8px;
   }
 
   .dish-of-the-day-description-container a {
@@ -447,7 +449,7 @@ footer {
 @media (max-width: 530px) {
 
   h1 {
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -477,7 +479,7 @@ footer {
 @media (max-width: 400px) {
 
   h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   h2 {
