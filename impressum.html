@@ -1,55 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="de">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="impressum.css">
-    </head>
-    <body>
-       <header class="wrapper">
-        <div class="container">
-            <img class="picture" src="./img/logo.png" alt="Kochwelt Logo">
-            <nav class="nav_items">
-                <a class="nav_item" href="index.html">Start</a>
-                <a class="nav_item" href="gericht-des-tages.html">Rezept des Tages</a>
-                <a class="nav_item" href="kontakt.html">Kontakt</a>
-                <a class="nav_item" href="">Impressum</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt - Impressum</title>
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
+    <script src="script.js"></script>
+    <script src="nav-bar.js"></script>
+</head>
+
+<body>
+    <header class="full-width">
+        <div class="content-limitation header-container">
+
+            <a href="index.html">
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
+            </a>
+
+            <nav class="content-nav">
+                <ul class="nav_items menu-icon">
+                    <li class="hideOnMobile"><a href="index.html">Start</a></li>
+                    <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+                    <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+                    <li class="hiddenFullSize" onclick="showSidebar()">
+                        <img src="./img/menu-icon.svg" alt="Menu Button">
+                    </li>
+                </ul>
+
+                <ul class="sidebar">
+                    <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-    <section class="impressum-container">
+
+    <main class="section-padding content-limitation">
         <h1>Impressum</h1>
-        <div class="impressum-section">
-            <h2>Angaben gemäß § 5 TMG</h2>
-            <address>
-                Max Mustermann<br>
-                Musterstraße 123<br>
-                12345 Musterstadt
-            </address>
+        <p>Angaben gemäß § 5 DDG</p>
+        <p>Kochwelt<br>
+            <br><br>
+            Codiererstraße 5<br>
+            12346 DeepWeb<br>
+        </p>
+        <br><br>
+        <p> <strong>Vertreten durch: </strong><br>
+            Elena, Jörg, Jan, Kevin, Alexander<br>
+        </p>
+        <br><br>
+        <p><strong>Verbraucherstreitbeilegung / Universalschlichtungsstelle</strong>
+            <br>Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil und sind dazu
+            auch nicht verpflichtet.
+        </p>
+        <br><br>
+        <p><strong>Datenschutzerklärung</strong><br>
+            Unter dem folgenden Link finden Sie unsere
+            <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+        <br><br>
+        <p>Impressum von <a href="https://impressum-generator.de" rel="dofollow">Impressum-Generator.de</a>. Powered by
+            <a href="https://www.kanzlei-hasselbach.de/" rel="nofollow">Franziska Hasselbach, Bonn</a>.
+        </p>
+    </main>
+
+    <footer class="full-width">
+        <div class="content-limitation footer-container">
+            <a class="hideOnHandy" href="index.html">
+                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png" alt="Kochwelt Logo" />
+            </a>
+
+            <a class="displayMobile" href="index.html">
+                <img class="header-footer-logo" src="./img/logo_small.png" alt="Kochwelt Logo">
+            </a>
+
+            <div aria-label="Social Media Links" class="socialmedia-container">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img class="footer-socialmedia" src="./img/facebook.png" alt="facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="footer-socialmedia" src="./img/insta.png" alt="instagram" />
+                </a>
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img class="footer-socialmedia" src="./img/twitter.png" alt="twitter" />
+                </a>
+            </div>
         </div>
-        <div class="impressum-section">
-            <h2>Kontakt</h2>
-            <p>Telefon: +49 (0) 123 456789<br>
-            E-Mail: <a href="mailto:max@mustermann-beispiel.de">max@mustermann-beispiel.de</a></p>
-        </div>
-        <div class="impressum-section">
-            <h2>Redaktionell verantwortlich</h2>
-            <p>Max Mustermann<br>
-            Musterstraße 123<br>
-            12345 Musterstadt</p>
-        </div>
-        <div class="impressum-section">
-            <h2>Sonstige Infomation</h2>
-            <p></p>
-        </div>
-        <div class="impressum-section">
-            <p>The icons are provided by <a href="https://fontawesome.com/" rel="nofollow" target="_blank">FontAwesome</a> unter the <a href="https://fontawesome.com/license" target="_blank" rel="nofollow">Creative Commons Attribution 4.0 International license</a>.</p>
-        </div>
-    </section>
-        <script src="" async defer></script>
-    </body>
+    </footer>
+</body>
+
 </html>

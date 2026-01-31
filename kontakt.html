@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Kochwelt - Kontakt</title>
     <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_kontakt.css">
     <link rel="stylesheet" href="./assets/fonts-raleway/fonts-raleway.css" />
+    <script src="nav-bar.js"></script>
     <script src="script_kontakt.js"></script>
 </head>
 
@@ -19,16 +20,28 @@
         <div class="content-limitation header-container">
 
             <a href="index.html">
-                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo">
+                <img class="header-footer-logo" src="./img/logo.png" alt="Kochwelt Logo" />
             </a>
 
-            <nav class="nav_items">
-                <a target="_self" href="index.html">Start</a>
-                <a target="_self" href="rezept-des-tages.html">Rezept des Tages</a>
-                <a target="_self" href="kontakt.html">Kontakt</a>
-                <a target="_self" href="">Impressum</a>
-            </nav>
+            <nav class="content-nav">
+                <ul class="nav_items menu-icon">
+                    <li class="hideOnMobile"><a href="index.html">Start</a></li>
+                    <li class="hideOnMobile"><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+                    <li class="hideOnMobile"><a href="impressum.html">Impressum</a></li>
+                    <li class="hiddenFullSize" onclick="showSidebar()">
+                        <img src="./img/menu-icon.svg" alt="Menu Button">
+                    </li>
+                </ul>
 
+                <ul class="sidebar">
+                    <!-- <li onclick="hideSidebar()"><a href="#"><img src="./img/close.svg" alt="Close Button"></a></li> -->
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="rezept-des-tages.html">Rezept des Tages</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -61,22 +74,34 @@
     <footer class="full-width">
         <div class="content-limitation footer-container">
             <a href="index.html">
-                <img class="header-footer-logo" src="./img/logo_kochwelt_ weiss.png"
-                    alt="Kochwelt Logo">
+                <img 
+                    class="header-footer-logo" 
+                    src="./img/logo_kochwelt_ weiss.png"
+                    alt="Kochwelt Logo"
+                />
             </a>
 
-            <div aria-label="Social Media Links">
-                <a target="_self" href="https://www.facebook.com/?locale=de_DE">
-                    <img class="footer-socialmedia" src="./img/facebook.png"
-                        alt="facebook">
+            <div aria-label="Social Media Links" class="socialmedia-container">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/facebook.png"
+                        alt="facebook"
+                    />
                 </a>
-                <a target="_self" href="https://www.instagram.com/">
-                    <img class="footer-socialmedia" src="./img/insta.png"
-                        alt="instagram">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/insta.png"
+                        alt="instagram"
+                    />
                 </a>
-                <a target="_self" href="https://x.com/?lang=de">
-                    <img class="footer-socialmedia" src="./img/twitter.png"
-                        alt="twitter">
+                <a target="_blank" href="https://x.com/?lang=de">
+                    <img 
+                        class="footer-socialmedia" 
+                        src="./img/twitter.png"
+                        alt="twitter"
+                    />
                 </a>
             </div>
         </div>

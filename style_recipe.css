@@ -1,13 +1,32 @@
 .headline-picture {
   height: 300px;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 32px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+h1 {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+h2 {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+h3 {
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .generally-recipe-information-container {
   margin-bottom: 32px;
   gap: 20px;
+  display: flex;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .generally-recipe-information-item {
@@ -24,8 +43,9 @@
 }
 
 .ingredients-calculation-container {
+  display: flex;
   border-top: 1px solid #efefef;
-  padding: 8px 0;
+  padding: 8px 48px;
   align-items: center;
 }
 
@@ -39,6 +59,7 @@ input {
 
 table {
   margin-bottom: 32px;
+  padding: 0 48px;
 }
 
 tr:nth-child(odd) {
@@ -50,10 +71,16 @@ td {
   padding: 16px 24px;
 }
 
+.preparation-text {
+  padding: 0 48px;
+}
+
 .recipe-responsible {
   align-items: center;
   gap: 30px;
   margin-bottom: 32px;
+  display: flex;
+  padding: 0 48px;
 }
 
 .profile-picture {
@@ -63,12 +90,87 @@ td {
 }
 
 .profile-picture-jan {
-    width: 70px;
-    height: 80px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+  width: 70px;
+  height: 80px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.profile-picture-kevin {
+  width: 70px;
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
 
 .name {
   font-size: 24px;
 }
+
+@media (max-width: 1150px) {
+
+  .headline-picture {
+    height: 200px;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .headline-picture {
+    height: 150px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .generally-recipe-information-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ingredients-calculation-container {
+    justify-content: center;
+  }
+
+  .recipe-responsible {
+    justify-content: center;
+  }
+
+}
+
+@media(max-width: 400px) {
+
+  .generally-recipe-information-container {
+    padding-right: 0;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ingredients-calculation-container {
+    padding: 8px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  input{
+    margin-left: 0;
+  }
+
+  table{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+}
+

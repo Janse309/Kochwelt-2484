@@ -13,12 +13,13 @@ html {
   margin: 0 auto;
 }
 
-.full-width {
-  width: calc(100% + 96px);
-  /* Padding aus Body wieder kompensieren */
-  margin-left: -48px;
-  margin-right: -48px;
-}
+/* .full-width {
+   width: calc(100% + 96px); 
+  /Padding aus Body wieder kompensieren 
+   margin-left: -48px; 
+   margin-right: -48px; 
+   width: 100%; 
+ } */
 
 body {
   font-family: "Raleway", sans-serif;
@@ -27,8 +28,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  padding-left: 48px;
-  padding-right: 48px;
+  /* padding-left: 48px; 
+  padding-right: 48px;  */
+  width: 100%;
 }
 
 main {
@@ -40,9 +42,15 @@ section {
   flex-direction: column;
 }
 
-div {
-  display: flex;
+.section-padding {
+  padding-bottom: 90px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
+
+/* div {
+  display: flex;
+} */
 
 button {
   color: white;
@@ -62,12 +70,16 @@ h1 {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 24px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h2 {
   font-size: 30px;
   margin: 0;
   padding-bottom: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h3 {
@@ -108,14 +120,15 @@ ul {
 /* nav */
 
 header {
-  border-bottom: 4px solid #e8e8e8;
-  box-shadow: 0 15px 25px 1px #efefef;
   display: flex;
+  background-color: white;
   justify-content: center;
   height: 100px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   flex: 1;
@@ -162,7 +175,7 @@ nav a {
   right: -250px;
   /* Gleiche Breite wie die Sidebar, nur negativ */
   width: 250px;
-  height: 232px;
+  height: 200px;
   background-color: #efefef;
   z-index: 1000;
   transition: right 0.5s ease-in-out;
@@ -170,10 +183,7 @@ nav a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 16px;
-  padding-left: 16px;
   margin: 0;
-
 }
 
 .sidebar-open {
@@ -202,12 +212,18 @@ nav a {
 /* hier break */
 
 .hero-section {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero-container {
-  gap: 24px;
+  display: flex;
+  gap: 40px;
+  /* padding-left: 48px; 
+  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
 }
 
 .hero-image {
@@ -217,32 +233,54 @@ nav a {
 }
 
 .dish-of-the-day-description-container {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .dotd-description {
   flex: 1;
 }
 
+.dotd-button-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .dotd-button {
   margin-bottom: 30px;
+  color: white;
+  background-color: #008000;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  padding: 12px 32px;
+}
+
+.dotd-button:hover {
+  color: white;
 }
 
 .recipes-section {
   background-color: #efefef;
   /* width: 100vw; */
+  width: 100%;
 }
 
 .recipes-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  /* padding-left: 48px; 
+  padding-right: 48px;  --> ist jetzt in der Klasse .section-padding enthalten */
+  text-align: center;
 }
 
 .dish-image-container {
+  display: flex;
   padding-top: 30px;
-  gap: 40px;
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .dish-image {
@@ -253,17 +291,19 @@ nav a {
 
 .news-section {
   align-items: center;
-  gap: 32px;
 }
 
 .news-section-article {
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
+  width: 100%;
 }
 
-.section-padding-top-bottom {
-  padding-top: 40px;
-  padding-bottom: 90px;
+.news-section-article span {
+  flex: 1;
+  text-align: center;
 }
 
 footer {
@@ -274,27 +314,37 @@ footer {
   align-items: center;
 }
 
+.displayMobile {
+  display: none;
+}
+
+.displayMobile img {
+  filter: invert(1);
+}
+
 .footer-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1;
   margin-left: 48px;
   margin-right: 48px;
+  width: 100%;
+}
+
+.socialmedia-container {
+  display: flex;
+  gap: 20px;
 }
 
 .footer-socialmedia {
   height: 60px;
-  margin-left: 20px;
 }
 
 @media (max-width: 1150px) {
-  body {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
   .hero-image {
-    height: 225px;
+    height: 200px;
   }
 
   .dish-image {
@@ -303,10 +353,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-  body {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 
   .header-footer-logo {
     height: 60px;
@@ -314,22 +360,22 @@ footer {
 
   h1 {
     font-size: 40px;
+    padding-top: 30px;
   }
 
   h2 {
     font-size: 20px;
   }
 
-  .hero-image {
-    aspect-ratio: 1 / 1;
+  span {
+    text-align: center;
   }
 
-  .footer-socialmedia {
-    height: 50px;
+  nav a {
+    align-items: center;
+    justify-content: center;
   }
-}
 
-@media (max-width: 770px) {
   a:hover {
     color: black;
   }
@@ -346,55 +392,81 @@ footer {
     margin-bottom: 16px;
   }
 
-
+  .hero-image {
+    aspect-ratio: 2 / 1;
+  }
 
   .hero-container {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 0;
-    margin-bottom: 24px;
   }
 
-  .dotd-h2-responsive {
+  .hero-container h2 {
     text-align: center;
   }
 
-  .dotd-button {
-    margin-bottom: 0;
-  }
-
-  .section-padding-top-bottom {
-    padding-top: 24px;
-    padding-bottom: 40px;
-  }
-
-  .dish-image-section {
-    flex-direction: column;
+  .dish-of-the-day-description-container {
     align-items: center;
-    gap: 24px;
   }
 
-  .news-section {
-    gap: 0;
+  .dotd-description {
+    margin-bottom: 16px;
+  }
+
+  .dish-of-the-day-description-container a {
+    padding-top: 16px;
+  }
+
+  .dish-image-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .dish-image {
+    width: 300px;
+    height: 250px;
   }
 
   .news-section-article {
     flex-direction: column;
-    display: flex;
     align-items: center;
     gap: 24px;
   }
 
-  .news-section-article img {
-    height: 200px;
-    width: 250px;
+  .footer-socialmedia {
+    height: 50px;
+  }
+
+  .section-padding {
+    padding-bottom: 40px;
   }
 }
 
 @media (max-width: 530px) {
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .hero-image {
+    height: 200px;
+    width: 300px;
+  }
+
+  .dish-image {
+    height: 200px;
+    width: 250px;
+  }
+
   .footer-socialmedia {
     height: 35px;
-    margin-left: 10px;
   }
 
   .header-footer-logo {
@@ -402,3 +474,61 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    width: 250px;
+  }
+
+  .hideOnHandy {
+    display: none;
+  }
+
+  .displayMobile {
+    display: flex;
+  }
+
+  .socialmedia-container {
+    gap: 8px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  /* Impressum */
+
+  .section-padding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-padding p{
+    text-align: center;
+  }
+
+  .Datenschutz-400px {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+  }
+
+}
+
+@media(max-width:250px) {
+  .hero-image {
+    height: 150px;
+    width: 200px;
+  }
+
+  .dish-image {
+    width: 150px;
+    height: 150px;
+  }
+}
