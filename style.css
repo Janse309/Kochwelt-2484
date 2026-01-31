@@ -502,14 +502,19 @@ footer {
     display: flex;
   }
 
+  .section-padding {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
   /* Impressum */
 
-  .section-padding{
+  .section-padding {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .section-padding p{
+  .section-padding p {
     text-align: center;
   }
 
@@ -524,5 +529,10 @@ footer {
   .dish-image {
     width: 150px;
     height: 150px;
+  }
+
+    .section-padding {
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
