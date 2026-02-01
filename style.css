@@ -528,6 +528,12 @@ footer {
 }
 
 @media(max-width: 300px) {
+
+  .header-container{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
   .footer-container {
     margin-left: 16px;
     margin-right: 16px;
