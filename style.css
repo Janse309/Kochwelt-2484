@@ -304,7 +304,7 @@ nav a {
 .news-section-article span {
   flex: 1;
   text-align: center;
-  padding: 8px;
+  padding: 8px 48px;
 }
 
 footer {
@@ -412,7 +412,7 @@ footer {
 
   .dotd-description {
     margin-bottom: 16px;
-    padding: 8px;
+    padding: 8px 48px;
   }
 
   .dish-of-the-day-description-container a {
@@ -513,6 +513,8 @@ footer {
 
   .section-padding p{
     text-align: center;
+    padding-right: 48px;
+    padding-left: 48px;
   }
 
   .Datenschutz-400px {
