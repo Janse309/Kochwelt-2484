@@ -506,12 +506,12 @@ footer {
 
   /* Impressum */
 
-  .section-padding{
+  .section-padding {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .section-padding p{
+  .section-padding p {
     text-align: center;
     padding-right: 16px;
     padding-left: 16px;
@@ -523,6 +523,15 @@ footer {
     margin: 0;
   }
 
+
+
+}
+
+@media(max-width: 300px) {
+  .footer-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 @media(max-width:250px) {
@@ -535,4 +544,6 @@ footer {
     width: 150px;
     height: 150px;
   }
+
+
 }
