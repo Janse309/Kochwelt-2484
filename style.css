@@ -541,6 +541,11 @@ footer {
 }
 
 @media(max-width:250px) {
+
+  h1{
+    font-size: 26px;
+  }
+
   .hero-image {
     height: 150px;
     width: 200px;
@@ -550,6 +555,8 @@ footer {
     width: 150px;
     height: 150px;
   }
+
+
 
 
 }

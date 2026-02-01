@@ -202,5 +202,14 @@ td {
     padding: 0 16px;
   }
 
+  .preparation-text{
+    padding: 0 16px;
+  }
+}
 
+@media (max-width:300px){
+  h2{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
