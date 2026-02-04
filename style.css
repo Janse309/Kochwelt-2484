@@ -174,9 +174,8 @@ nav a {
 }
 
 .sidebar {
-  position: fixed;
-  top: 100px;
-  right: -250px;
+  position: absolute;
+  right: -300px;
   /* Gleiche Breite wie die Sidebar, nur negativ */
   width: 250px;
   height: 200px;
@@ -191,7 +190,8 @@ nav a {
 }
 
 .sidebar-open {
-  right: 0;
+  top: 46px;
+  right: -75px;
 }
 
 .sidebar a:hover {
@@ -533,7 +533,7 @@ footer {
 
 @media(max-width: 300px) {
 
-  .header-container{
+  .header-container {
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -546,7 +546,7 @@ footer {
 
 @media(max-width:250px) {
 
-  h1{
+  h1 {
     font-size: 26px;
   }
 
@@ -559,8 +559,4 @@ footer {
     width: 150px;
     height: 150px;
   }
-
-
-
-
 }
